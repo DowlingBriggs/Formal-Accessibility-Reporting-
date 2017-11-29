@@ -47,7 +47,21 @@
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.radioButton15 = new System.Windows.Forms.RadioButton();
+            this.radioButton16 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.radioButton17 = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.radioButton18 = new System.Windows.Forms.RadioButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.radioButton19 = new System.Windows.Forms.RadioButton();
+            this.radioButton20 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -243,11 +257,148 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Dialog boxes and popups can be navigated and closed using a keyboard Esc key. ";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton13);
+            this.groupBox2.Controls.Add(this.radioButton14);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.radioButton15);
+            this.groupBox2.Controls.Add(this.radioButton16);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.radioButton17);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.radioButton18);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.radioButton19);
+            this.groupBox2.Controls.Add(this.radioButton20);
+            this.groupBox2.Location = new System.Drawing.Point(13, 263);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(646, 152);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Form Accessibility and Usability";
+            // 
+            // radioButton13
+            // 
+            this.radioButton13.AutoSize = true;
+            this.radioButton13.Location = new System.Drawing.Point(603, 126);
+            this.radioButton13.Name = "radioButton13";
+            this.radioButton13.Size = new System.Drawing.Size(14, 13);
+            this.radioButton13.TabIndex = 13;
+            this.radioButton13.TabStop = true;
+            this.radioButton13.UseVisualStyleBackColor = true;
+            // 
+            // radioButton14
+            // 
+            this.radioButton14.AutoSize = true;
+            this.radioButton14.Location = new System.Drawing.Point(557, 126);
+            this.radioButton14.Name = "radioButton14";
+            this.radioButton14.Size = new System.Drawing.Size(14, 13);
+            this.radioButton14.TabIndex = 12;
+            this.radioButton14.TabStop = true;
+            this.radioButton14.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(7, 126);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(384, 13);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Error recovery mechanisms are present and easy-to-use.";
+            // 
+            // radioButton15
+            // 
+            this.radioButton15.AutoSize = true;
+            this.radioButton15.Location = new System.Drawing.Point(603, 93);
+            this.radioButton15.Name = "radioButton15";
+            this.radioButton15.Size = new System.Drawing.Size(14, 13);
+            this.radioButton15.TabIndex = 10;
+            this.radioButton15.TabStop = true;
+            this.radioButton15.UseVisualStyleBackColor = true;
+            // 
+            // radioButton16
+            // 
+            this.radioButton16.AutoSize = true;
+            this.radioButton16.Location = new System.Drawing.Point(557, 93);
+            this.radioButton16.Name = "radioButton16";
+            this.radioButton16.Size = new System.Drawing.Size(14, 13);
+            this.radioButton16.TabIndex = 9;
+            this.radioButton16.TabStop = true;
+            this.radioButton16.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(7, 93);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(384, 33);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "All forms can be completed and navigated via keyboard.";
+            // 
+            // radioButton17
+            // 
+            this.radioButton17.AutoSize = true;
+            this.radioButton17.Location = new System.Drawing.Point(603, 60);
+            this.radioButton17.Name = "radioButton17";
+            this.radioButton17.Size = new System.Drawing.Size(14, 13);
+            this.radioButton17.TabIndex = 7;
+            this.radioButton17.TabStop = true;
+            this.radioButton17.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(7, 60);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(384, 33);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "If a label is not visible, a hidden label or descriptive title attribute exists. " +
+    "";
+            // 
+            // radioButton18
+            // 
+            this.radioButton18.AutoSize = true;
+            this.radioButton18.Location = new System.Drawing.Point(557, 60);
+            this.radioButton18.Name = "radioButton18";
+            this.radioButton18.Size = new System.Drawing.Size(14, 13);
+            this.radioButton18.TabIndex = 6;
+            this.radioButton18.TabStop = true;
+            this.radioButton18.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.Location = new System.Drawing.Point(7, 20);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(384, 29);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Form fields are properly labeled. Click on the form label. If the field gains foc" +
+    "us, it is properly labeled. ";
+            // 
+            // radioButton19
+            // 
+            this.radioButton19.AutoSize = true;
+            this.radioButton19.Location = new System.Drawing.Point(557, 20);
+            this.radioButton19.Name = "radioButton19";
+            this.radioButton19.Size = new System.Drawing.Size(14, 13);
+            this.radioButton19.TabIndex = 2;
+            this.radioButton19.TabStop = true;
+            this.radioButton19.UseVisualStyleBackColor = true;
+            // 
+            // radioButton20
+            // 
+            this.radioButton20.AutoSize = true;
+            this.radioButton20.Location = new System.Drawing.Point(603, 20);
+            this.radioButton20.Name = "radioButton20";
+            this.radioButton20.Size = new System.Drawing.Size(14, 13);
+            this.radioButton20.TabIndex = 4;
+            this.radioButton20.TabStop = true;
+            this.radioButton20.UseVisualStyleBackColor = true;
+            // 
             // SiteEval
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 438);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(678, 470);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -256,6 +407,8 @@
             this.Text = "Report Creator";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,5 +435,18 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton radioButton15;
+        private System.Windows.Forms.RadioButton radioButton16;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.RadioButton radioButton17;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton radioButton18;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.RadioButton radioButton19;
+        private System.Windows.Forms.RadioButton radioButton20;
     }
 }
