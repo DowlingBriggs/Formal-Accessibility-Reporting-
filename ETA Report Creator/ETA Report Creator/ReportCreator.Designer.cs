@@ -74,9 +74,8 @@
             this.reportCreator_date.AutoSize = true;
             this.reportCreator_date.Location = new System.Drawing.Point(9, 121);
             this.reportCreator_date.Name = "reportCreator_date";
-            this.reportCreator_date.Size = new System.Drawing.Size(82, 13);
+            this.reportCreator_date.Size = new System.Drawing.Size(0, 13);
             this.reportCreator_date.TabIndex = 4;
-            this.reportCreator_date.Text = "Date: aa/aa/aa";
             this.reportCreator_date.Click += new System.EventHandler(this.label3_Click);
             // 
             // reportCreator_next

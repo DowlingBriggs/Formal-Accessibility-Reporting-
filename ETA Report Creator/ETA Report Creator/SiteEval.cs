@@ -15,6 +15,13 @@ namespace ETA_Report_Creator
         public SiteEval()
         {
             InitializeComponent();
+
+            eval_siteName.Text = ReportCreator.siteName;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
