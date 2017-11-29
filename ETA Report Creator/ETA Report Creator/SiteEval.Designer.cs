@@ -35,19 +35,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
+            this.siteEval_keyAccess_groupbox = new System.Windows.Forms.GroupBox();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.siteEval_formaccess_groupbox = new System.Windows.Forms.GroupBox();
             this.radioButton13 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,8 +62,8 @@
             this.radioButton20 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.siteEval_keyAccess_groupbox.SuspendLayout();
+            this.siteEval_formaccess_groupbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // eval_siteName
@@ -132,103 +132,29 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // siteEval_keyAccess_groupbox
             // 
-            this.groupBox1.Controls.Add(this.radioButton9);
-            this.groupBox1.Controls.Add(this.radioButton10);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.radioButton7);
-            this.groupBox1.Controls.Add(this.radioButton8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(13, 40);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(646, 207);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Keyboard Accessibility";
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(7, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(384, 29);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "All functionality is available using only the keyboard (Tab, Shift + Tab, Enter, " +
-    "etc.). ";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(7, 60);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(384, 33);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "A \"skip navigation\" link is available Activate the skip link and hit \"Tab\" again " +
-    "to ensure it functions correctly. (see webaim.org/techniques/skipnav/)";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(7, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(384, 33);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Navigation order is logical";
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(603, 103);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(14, 13);
-            this.radioButton5.TabIndex = 10;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(557, 103);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(14, 13);
-            this.radioButton6.TabIndex = 9;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(603, 136);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(14, 13);
-            this.radioButton7.TabIndex = 13;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(557, 136);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(14, 13);
-            this.radioButton8.TabIndex = 12;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(7, 136);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(384, 33);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "A visible keyboard focus indicator/outline is present.";
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton9);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton10);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.label8);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton7);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton8);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.label7);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton5);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton6);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.label2);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton3);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.label6);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton4);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.label5);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton1);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.radioButton2);
+            this.siteEval_keyAccess_groupbox.Location = new System.Drawing.Point(13, 40);
+            this.siteEval_keyAccess_groupbox.Name = "siteEval_keyAccess_groupbox";
+            this.siteEval_keyAccess_groupbox.Size = new System.Drawing.Size(646, 207);
+            this.siteEval_keyAccess_groupbox.TabIndex = 8;
+            this.siteEval_keyAccess_groupbox.TabStop = false;
+            this.siteEval_keyAccess_groupbox.Text = "Keyboard Accessibility";
             // 
             // radioButton9
             // 
@@ -258,26 +184,100 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Dialog boxes and popups can be navigated and closed using a keyboard Esc key. ";
             // 
-            // groupBox2
+            // radioButton7
             // 
-            this.groupBox2.Controls.Add(this.radioButton13);
-            this.groupBox2.Controls.Add(this.radioButton14);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.radioButton15);
-            this.groupBox2.Controls.Add(this.radioButton16);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.radioButton17);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.radioButton18);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.radioButton19);
-            this.groupBox2.Controls.Add(this.radioButton20);
-            this.groupBox2.Location = new System.Drawing.Point(13, 263);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(646, 152);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Form Accessibility and Usability";
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(603, 136);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(14, 13);
+            this.radioButton7.TabIndex = 13;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(557, 136);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(14, 13);
+            this.radioButton8.TabIndex = 12;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(7, 136);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(384, 33);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "A visible keyboard focus indicator/outline is present.";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(603, 103);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(14, 13);
+            this.radioButton5.TabIndex = 10;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(557, 103);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(14, 13);
+            this.radioButton6.TabIndex = 9;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(7, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(384, 33);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Navigation order is logical";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(7, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(384, 33);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "A \"skip navigation\" link is available Activate the skip link and hit \"Tab\" again " +
+    "to ensure it functions correctly. (see webaim.org/techniques/skipnav/)";
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(7, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(384, 29);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "All functionality is available using only the keyboard (Tab, Shift + Tab, Enter, " +
+    "etc.). ";
+            // 
+            // siteEval_formaccess_groupbox
+            // 
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton13);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton14);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.label10);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton15);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton16);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.label11);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton17);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.label12);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton18);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.label13);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton19);
+            this.siteEval_formaccess_groupbox.Controls.Add(this.radioButton20);
+            this.siteEval_formaccess_groupbox.Location = new System.Drawing.Point(13, 263);
+            this.siteEval_formaccess_groupbox.Name = "siteEval_formaccess_groupbox";
+            this.siteEval_formaccess_groupbox.Size = new System.Drawing.Size(646, 152);
+            this.siteEval_formaccess_groupbox.TabIndex = 17;
+            this.siteEval_formaccess_groupbox.TabStop = false;
+            this.siteEval_formaccess_groupbox.Text = "Form Accessibility and Usability";
             // 
             // radioButton13
             // 
@@ -420,17 +420,17 @@
             this.ClientSize = new System.Drawing.Size(678, 470);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.siteEval_formaccess_groupbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.eval_siteName);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.siteEval_keyAccess_groupbox);
             this.Name = "SiteEval";
-            this.Text = "Report Creator";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Text = "Site Evaluation";
+            this.siteEval_keyAccess_groupbox.ResumeLayout(false);
+            this.siteEval_keyAccess_groupbox.PerformLayout();
+            this.siteEval_formaccess_groupbox.ResumeLayout(false);
+            this.siteEval_formaccess_groupbox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,7 +445,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox siteEval_keyAccess_groupbox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton radioButton9;
@@ -457,7 +457,7 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox siteEval_formaccess_groupbox;
         private System.Windows.Forms.RadioButton radioButton13;
         private System.Windows.Forms.RadioButton radioButton14;
         private System.Windows.Forms.Label label10;

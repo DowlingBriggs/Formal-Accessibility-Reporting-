@@ -17,6 +17,8 @@ namespace ETA_Report_Creator
             InitializeComponent();
 
             eval_siteName.Text = ReportCreator.siteName;
+            //eval_testerName.Text = ReportCreator.testerName;
+          
         }
 
         private void button2_Click(object sender, EventArgs e)

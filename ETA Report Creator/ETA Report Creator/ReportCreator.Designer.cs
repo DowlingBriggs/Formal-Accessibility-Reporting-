@@ -68,6 +68,7 @@
             this.reportCreator_testerNameText.Name = "reportCreator_testerNameText";
             this.reportCreator_testerNameText.Size = new System.Drawing.Size(197, 20);
             this.reportCreator_testerNameText.TabIndex = 3;
+            this.reportCreator_testerNameText.TextChanged += new System.EventHandler(this.reportCreator_testerNameText_TextChanged);
             // 
             // reportCreator_date
             // 
