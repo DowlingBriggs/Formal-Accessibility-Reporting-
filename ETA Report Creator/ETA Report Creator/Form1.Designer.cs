@@ -33,8 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.mainNext = new System.Windows.Forms.Button();
+            this.mainCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -79,31 +79,32 @@
             this.label3.Text = "Date: aa/aa/aa";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button1
+            // mainNext
             // 
-            this.button1.Location = new System.Drawing.Point(12, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
+            this.mainNext.Location = new System.Drawing.Point(12, 149);
+            this.mainNext.Name = "mainNext";
+            this.mainNext.Size = new System.Drawing.Size(75, 23);
+            this.mainNext.TabIndex = 7;
+            this.mainNext.Text = "Next";
+            this.mainNext.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // mainCancel
             // 
-            this.button2.Location = new System.Drawing.Point(134, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.mainCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.mainCancel.Location = new System.Drawing.Point(134, 149);
+            this.mainCancel.Name = "mainCancel";
+            this.mainCancel.Size = new System.Drawing.Size(75, 23);
+            this.mainCancel.TabIndex = 8;
+            this.mainCancel.Text = "Cancel";
+            this.mainCancel.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(218, 183);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.mainCancel);
+            this.Controls.Add(this.mainNext);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
@@ -123,8 +124,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button mainNext;
+        private System.Windows.Forms.Button mainCancel;
     }
 }
 
