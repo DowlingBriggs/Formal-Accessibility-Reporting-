@@ -50,8 +50,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radoBtn2_fail = new System.Windows.Forms.RadioButton();
+            this.rdoButton1_pass = new System.Windows.Forms.RadioButton();
             this.siteEval_formaccess_groupbox = new System.Windows.Forms.GroupBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.radioButton17 = new System.Windows.Forms.RadioButton();
@@ -289,32 +289,30 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.radoBtn2_fail);
+            this.panel1.Controls.Add(this.rdoButton1_pass);
             this.panel1.Location = new System.Drawing.Point(552, 20);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(71, 17);
             this.panel1.TabIndex = 17;
             // 
-            // radioButton2
+            // radoBtn2_fail
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(51, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radoBtn2_fail.AutoSize = true;
+            this.radoBtn2_fail.Location = new System.Drawing.Point(51, 3);
+            this.radoBtn2_fail.Name = "radoBtn2_fail";
+            this.radoBtn2_fail.Size = new System.Drawing.Size(14, 13);
+            this.radoBtn2_fail.TabIndex = 1;
+            this.radoBtn2_fail.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdoButton1_pass
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdoButton1_pass.AutoSize = true;
+            this.rdoButton1_pass.Location = new System.Drawing.Point(3, 3);
+            this.rdoButton1_pass.Name = "rdoButton1_pass";
+            this.rdoButton1_pass.Size = new System.Drawing.Size(14, 13);
+            this.rdoButton1_pass.TabIndex = 0;
+            this.rdoButton1_pass.UseVisualStyleBackColor = true;
             // 
             // siteEval_formaccess_groupbox
             // 
@@ -562,8 +560,8 @@
         private System.Windows.Forms.Button siteEval_done;
         private System.Windows.Forms.Button siteEval_exit;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radoBtn2_fail;
+        private System.Windows.Forms.RadioButton rdoButton1_pass;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
