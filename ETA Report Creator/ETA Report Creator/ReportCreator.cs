@@ -21,5 +21,18 @@ namespace ETA_Report_Creator
         {
 
         }
+
+        private void reportCreator_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+        }
+
+        private void reportCreator_next_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new SiteEval();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
     }
 }

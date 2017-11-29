@@ -87,6 +87,7 @@
             this.reportCreator_next.TabIndex = 7;
             this.reportCreator_next.Text = "Next";
             this.reportCreator_next.UseVisualStyleBackColor = true;
+            this.reportCreator_next.Click += new System.EventHandler(this.reportCreator_next_Click);
             // 
             // reportCreator_cancel
             // 
@@ -97,11 +98,14 @@
             this.reportCreator_cancel.TabIndex = 8;
             this.reportCreator_cancel.Text = "Cancel";
             this.reportCreator_cancel.UseVisualStyleBackColor = true;
+            this.reportCreator_cancel.Click += new System.EventHandler(this.reportCreator_cancel_Click);
             // 
-            // Form1
+            // ReportCreator
             // 
+            this.AcceptButton = this.reportCreator_next;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.reportCreator_cancel;
             this.ClientSize = new System.Drawing.Size(218, 183);
             this.Controls.Add(this.reportCreator_cancel);
             this.Controls.Add(this.reportCreator_next);
@@ -110,7 +114,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reportCreator_siteNameText);
-            this.Name = "Form1";
+            this.Name = "ReportCreator";
             this.Text = "Report Creator";
             this.ResumeLayout(false);
             this.PerformLayout();
