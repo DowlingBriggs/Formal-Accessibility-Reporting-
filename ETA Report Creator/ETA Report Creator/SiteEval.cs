@@ -17,13 +17,34 @@ namespace ETA_Report_Creator
             InitializeComponent();
 
             eval_siteName.Text = ReportCreator.siteName;
-            //eval_testerName.Text = ReportCreator.testerName;
+           // eval_testerName.Text = ReportCreator.testerName;
           
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void siteEval_exit_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void siteEval_done_Click(object sender, EventArgs e)
+        {
+            bool isAnyRadioButtonChecked = false;
+            foreach (RadioButton rdo in panel1.Controls.OfType<RadioButton>())
+            {
+                if (rdo.Checked)
+                {
+                    isAnyRadioButtonChecked = true;
+                    break;
+                }
+            }
+            if (isAnyRadioButtonChecked)
+            {
+                // Code here one button is checked
+            }
+            else
+            {
+                // Print message no button is selected 
+            }
         }
     }
 }
