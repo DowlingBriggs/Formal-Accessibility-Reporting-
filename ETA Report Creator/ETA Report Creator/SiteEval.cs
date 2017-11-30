@@ -159,9 +159,14 @@ namespace ETA_Report_Creator
                         }
                     }
                 }
-                
-                //Save the document
-                object filename = @"C:\Users\ETA Etime\Documents\ReportCreator Reports\temp1.docx";
+
+                //Save the document to My documents folder
+                string docfolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                //Naming the document
+                string mnth = DateTime.Now.Month.ToString();
+                string yr = DateTime.Now.Year.ToString();
+                object filename = docfolder + "\\" + ReportCreator.siteName + "_" + mnth + "_" + yr;
+                    
                 document.SaveAs2(ref filename);
                 document.Close(ref missing, ref missing, ref missing);
                 document = null;
