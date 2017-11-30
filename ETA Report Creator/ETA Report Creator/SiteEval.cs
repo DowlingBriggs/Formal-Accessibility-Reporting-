@@ -225,36 +225,95 @@ namespace ETA_Report_Creator
                     isAnyRadioButtonChecked = false;
                 }
             }
-
-
-
-
-
-
-
-
+            // Commented out for testing purposes
             /*
-            if (isAnyRadioButtonChecked)
+            //C1.4
+            foreach (RadioButton rdo in panel4.Controls.OfType<RadioButton>())
             {
-                // Code here one button is checked
-                if (rdoButton1_pass.Checked == true)
+                if (rdo.Checked)
                 {
-                    //Was not sure if we want to send output directly from here or if we are waiting until end.
-                    MessageBox.Show("Pass");
-                    return;
+                    isAnyRadioButtonChecked = true;
+                    break;
                 }
                 else
                 {
-                    MessageBox.Show("Here are the reasons why it failed.");
+                    isAnyRadioButtonChecked = false;
                 }
             }
-            else
+            //C1.5
+            foreach (RadioButton rdo in panel5.Controls.OfType<RadioButton>())
             {
-                // Print message no button is selected 
-                MessageBox.Show("Please select if the site Passes or Fails the specific accessibility evaluation criteria.");
-                return;
+                if (rdo.Checked)
+                {
+                    isAnyRadioButtonChecked = true;
+                    break;
+                }
+                else
+                {
+                    isAnyRadioButtonChecked = false;
+                }
+            }
+            //C2.1
+            foreach (RadioButton rdo in panel9.Controls.OfType<RadioButton>())
+            {
+                if (rdo.Checked)
+                {
+                    isAnyRadioButtonChecked = true;
+                    break;
+                }
+                else
+                {
+                    isAnyRadioButtonChecked = false;
+                }
+            }
+            //C2.2
+            foreach (RadioButton rdo in panel8.Controls.OfType<RadioButton>())
+            {
+                if (rdo.Checked)
+                {
+                    isAnyRadioButtonChecked = true;
+                    break;
+                }
+                else
+                {
+                    isAnyRadioButtonChecked = false;
+                }
+            }
+            //C2.3
+            foreach (RadioButton rdo in panel7.Controls.OfType<RadioButton>())
+            {
+                if (rdo.Checked)
+                {
+                    isAnyRadioButtonChecked = true;
+                    break;
+                }
+                else
+                {
+                    isAnyRadioButtonChecked = false;
+                }
+            }
+            //C2.4
+            foreach (RadioButton rdo in panel6.Controls.OfType<RadioButton>())
+            {
+                if (rdo.Checked)
+                {
+                    isAnyRadioButtonChecked = true;
+                    break;
+                }
+                else
+                {
+                    isAnyRadioButtonChecked = false;
+                }
             }
             */
+
+
+
+
+
+
+
+
 
             return isAnyRadioButtonChecked;
         }

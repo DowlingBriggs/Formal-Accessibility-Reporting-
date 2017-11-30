@@ -32,10 +32,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.siteEval_keyAccess_groupbox = new System.Windows.Forms.GroupBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -72,8 +72,8 @@
             this.siteEval_done = new System.Windows.Forms.Button();
             this.siteEval_exit = new System.Windows.Forms.Button();
             this.siteEval_keyAccess_groupbox.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -112,8 +112,8 @@
             // 
             // siteEval_keyAccess_groupbox
             // 
-            this.siteEval_keyAccess_groupbox.Controls.Add(this.panel5);
             this.siteEval_keyAccess_groupbox.Controls.Add(this.panel4);
+            this.siteEval_keyAccess_groupbox.Controls.Add(this.panel5);
             this.siteEval_keyAccess_groupbox.Controls.Add(this.panel3);
             this.siteEval_keyAccess_groupbox.Controls.Add(this.panel2);
             this.siteEval_keyAccess_groupbox.Controls.Add(this.label8);
@@ -129,14 +129,14 @@
             this.siteEval_keyAccess_groupbox.TabStop = false;
             this.siteEval_keyAccess_groupbox.Text = "Keyboard Accessibility";
             // 
-            // panel5
+            // panel4
             // 
-            this.panel5.Controls.Add(this.radioButton10);
-            this.panel5.Controls.Add(this.radioButton9);
-            this.panel5.Location = new System.Drawing.Point(552, 136);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(71, 19);
-            this.panel5.TabIndex = 20;
+            this.panel4.Controls.Add(this.radioButton10);
+            this.panel4.Controls.Add(this.radioButton9);
+            this.panel4.Location = new System.Drawing.Point(552, 136);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(71, 19);
+            this.panel4.TabIndex = 20;
             // 
             // radioButton10
             // 
@@ -158,14 +158,14 @@
             this.radioButton9.TabStop = true;
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // panel5
             // 
-            this.panel4.Controls.Add(this.radioButton8);
-            this.panel4.Controls.Add(this.radioButton7);
-            this.panel4.Location = new System.Drawing.Point(552, 169);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(71, 19);
-            this.panel4.TabIndex = 20;
+            this.panel5.Controls.Add(this.radioButton8);
+            this.panel5.Controls.Add(this.radioButton7);
+            this.panel5.Location = new System.Drawing.Point(552, 169);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(71, 19);
+            this.panel5.TabIndex = 20;
             // 
             // radioButton8
             // 
@@ -517,10 +517,10 @@
             this.Name = "SiteEval";
             this.Text = "Site Evaluation";
             this.siteEval_keyAccess_groupbox.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -565,10 +565,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.Panel panel3;
