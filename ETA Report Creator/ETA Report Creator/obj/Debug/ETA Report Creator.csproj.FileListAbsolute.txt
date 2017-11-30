@@ -8,3 +8,4 @@ C:\Users\ETA Etime\Source\Repos\Formal-Accessibility-Reporting-3\ETA Report Crea
 C:\Users\ETA Etime\Source\Repos\Formal-Accessibility-Reporting-3\ETA Report Creator\ETA Report Creator\obj\Debug\ETA Report Creator.exe
 C:\Users\ETA Etime\Source\Repos\Formal-Accessibility-Reporting-3\ETA Report Creator\ETA Report Creator\obj\Debug\ETA Report Creator.pdb
 C:\Users\ETA Etime\Source\Repos\Formal-Accessibility-Reporting-3\ETA Report Creator\ETA Report Creator\obj\Debug\ETA_Report_Creator.ReportCreator.resources
+C:\Users\ETA Etime\Source\Repos\Formal-Accessibility-Reporting-3\ETA Report Creator\ETA Report Creator\obj\Debug\ETA Report Creator.csproj.ResolveComReference.cache
