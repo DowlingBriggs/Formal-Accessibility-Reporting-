@@ -117,9 +117,12 @@ namespace ETA_Report_Creator
                 
                 //Add paragraph with Heading 1 style
                 Microsoft.Office.Interop.Word.Paragraph para1 = document.Content.Paragraphs.Add(ref missing);                
-                object styleHeading1 = "Heading 1";
-                para1.Range.set_Style(ref styleHeading1);                
-                para1.Range.Text = "Para 1 text";
+                object styleHeading1 = "Title";
+                para1.Range.set_Style(ref styleHeading1);
+                para1.Range.Font.ColorIndex = Microsoft.Office.Interop.Word.WdColorIndex.wdDarkRed;
+                para1.Range.Font.Size = 22;
+                para1.Range.ParagraphFormat.Alignment = Microsoft.Office.Interop.Word.WdParagraphAlignment.wdAlignParagraphCenter;
+                para1.Range.Text = "ADAPTED ATHLETICS WEBSITE ACCESSIBILITY REPORT";
                 para1.Range.InsertParagraphAfter();
 
                 //Add paragraph with Heading 2 style
