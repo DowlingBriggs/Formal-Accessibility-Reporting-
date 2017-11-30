@@ -161,7 +161,7 @@ namespace ETA_Report_Creator
                 }
                 
                 //Save the document
-                object filename = @"c:\temp1.docx";
+                object filename = @"C:\Users\ETA Etime\Documents\ReportCreator Reports\temp1.docx";
                 document.SaveAs2(ref filename);
                 document.Close(ref missing, ref missing, ref missing);
                 document = null;
