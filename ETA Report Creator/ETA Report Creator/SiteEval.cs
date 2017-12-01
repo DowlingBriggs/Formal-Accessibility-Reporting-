@@ -87,7 +87,8 @@ namespace ETA_Report_Creator
 
                 //Create a new document
                 Microsoft.Office.Interop.Word.Document document = winword.Documents.Add(ref missing, ref missing, ref missing, ref missing);
-                
+
+                /*
                 //Add header into the document
                 foreach (Microsoft.Office.Interop.Word.Section section in document.Sections)
                 {
@@ -114,16 +115,33 @@ namespace ETA_Report_Creator
                 //adding text to document
                 document.Content.SetRange(0, 0);
                 document.Content.Text = "This is test document "+ Environment.NewLine;
-                
-                //Add paragraph with Heading 1 style
-                Microsoft.Office.Interop.Word.Paragraph para1 = document.Content.Paragraphs.Add(ref missing);                
-                object styleHeading1 = "Title";
-                para1.Range.set_Style(ref styleHeading1);
-                para1.Range.Font.ColorIndex = Microsoft.Office.Interop.Word.WdColorIndex.wdDarkRed;
-                para1.Range.Font.Size = 22;
-                para1.Range.ParagraphFormat.Alignment = Microsoft.Office.Interop.Word.WdParagraphAlignment.wdAlignParagraphCenter;
-                para1.Range.Text = "ADAPTED ATHLETICS WEBSITE ACCESSIBILITY REPORT";
-                para1.Range.InsertParagraphAfter();
+                */
+
+
+                object Title = "Title";
+                object Header1 = "Header 1";
+
+                //Report title -- Site name
+                Paragraph title1 = document.Content.Paragraphs.Add(ref missing);
+                string siteNameCap = ReportCreator.siteName.ToUpper();
+                title1.Range.Text = siteNameCap + " ";
+                title1.Range.set_Style(ref Title);
+                title1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                title1.Range.Font.Size = 22;
+                title1.Range.Font.Name = "Candara (Headings)";
+                title1.Range.Borders[WdBorderType.wdBorderTop].LineStyle = WdLineStyle.wdLineStyleDot;
+                title1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;                
+                title1.Range.InsertParagraphAfter();
+                //Report title part 2
+                Paragraph title2 = document.Content.Paragraphs.Add(ref missing);
+                title2.Range.Text = "WEBSITE ACCESSIBILITY REPORT";
+                title2.Range.set_Style(ref Title);
+                title2.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                title2.Range.Font.Size = 22;
+                title2.Range.Font.Name = "Candara (Headings)";
+                title2.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleDot;
+                title2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                title2.Range.InsertParagraphAfter();
 
                 //Add paragraph with Heading 2 style
                 Microsoft.Office.Interop.Word.Paragraph para2 = document.Content.Paragraphs.Add(ref missing);
@@ -133,7 +151,7 @@ namespace ETA_Report_Creator
                 para2.Range.InsertParagraphAfter();
 
                 //Create a 5X5 table and insert some dummy record
-                Table firstTable = document.Tables.Add(para1.Range, 5, 5, ref missing, ref missing);
+                Table firstTable = document.Tables.Add(title1.Range, 5, 5, ref missing, ref missing);
                 
                 firstTable.Borders.Enable = 1;
                 foreach (Row row in firstTable.Rows)
