@@ -119,7 +119,9 @@ namespace ETA_Report_Creator
 
 
                 object Title = "Title";
-                object Header1 = "Header 1";
+                object Header1 = "Heading 1";
+                object SublteReference = "Subtle Reference";
+                object NoSpacing = "No Spacing";
 
                 //Report title -- Site name
                 Paragraph title1 = document.Content.Paragraphs.Add(ref missing);
@@ -128,7 +130,7 @@ namespace ETA_Report_Creator
                 title1.Range.set_Style(ref Title);
                 title1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
                 title1.Range.Font.Size = 22;
-                title1.Range.Font.Name = "Candara (Headings)";
+                title1.Range.Font.Name = "Candara";
                 title1.Range.Borders[WdBorderType.wdBorderTop].LineStyle = WdLineStyle.wdLineStyleDot;
                 title1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;                
                 title1.Range.InsertParagraphAfter();
@@ -138,10 +140,30 @@ namespace ETA_Report_Creator
                 title2.Range.set_Style(ref Title);
                 title2.Range.Font.ColorIndex = WdColorIndex.wdBlack;
                 title2.Range.Font.Size = 22;
-                title2.Range.Font.Name = "Candara (Headings)";
+                title2.Range.Font.Name = "Candara";
                 title2.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleDot;
                 title2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
                 title2.Range.InsertParagraphAfter();
+                
+                //Text is stuck formatted to all uppercase??
+                //Report title Tester Name
+                Paragraph title3 = document.Content.Paragraphs.Add(ref missing);
+                title3.Range.set_Style(ref SublteReference);
+                title3.Range.Text = "Submitted by " + ReportCreator.testerName;
+                title3.Range.Font.Name = "Candara (Body)";
+                title3.Range.Font.Italic = 1;
+                title3.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                title3.Range.Font.Size = 11;                
+                
+                title3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                title3.Range.InsertParagraphAfter();
+
+
+
+
+
+
+
 
                 //Add paragraph with Heading 2 style
                 Microsoft.Office.Interop.Word.Paragraph para2 = document.Content.Paragraphs.Add(ref missing);
