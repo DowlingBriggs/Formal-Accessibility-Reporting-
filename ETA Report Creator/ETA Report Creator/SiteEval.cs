@@ -165,8 +165,7 @@ namespace ETA_Report_Creator
 
                 //Summary Section
 
-                //Summary 
-                //Report title part 2
+                //Summary Title
                 Paragraph summary1 = document.Content.Paragraphs.Add(ref missing);
                 summary1.Range.Text = "SUMMARY";
                 summary1.Range.set_Style(ref Header1);
@@ -174,7 +173,6 @@ namespace ETA_Report_Creator
                 summary1.Range.Font.Size = 12;
                 summary1.Range.Font.Name = "Candara";
                 summary1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
-                //title2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
                 summary1.Range.InsertParagraphAfter();
                 summary1.Range.InsertParagraphAfter();
 
@@ -191,9 +189,36 @@ namespace ETA_Report_Creator
                 summary2.Range.InsertParagraphAfter();
 
 
+                //Review Results Section
+
+                //Review Results Title
+                Paragraph results1 = document.Content.Paragraphs.Add(ref missing);
+                results1.Range.Text = "REVIEW RESULTS";
+                results1.Range.set_Style(ref Header1);
+                results1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                results1.Range.Font.Size = 12;
+                results1.Range.Font.Name = "Candara";
+                results1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
+                results1.Range.InsertParagraphAfter();
+                results1.Range.InsertParagraphAfter();
+
+                //Results paragraph
+                Paragraph results2 = document.Content.Paragraphs.Add(ref missing);
+                results2.Range.Text = "Like many UA web resources, the site does contain issues that can prevent users with disabilities from accessing site contents and functions."
+                    +" The results given here summarize the review findings, focusing on the challenges that would interfere most heavily with a user’s experience."
+                    +" Individual page checklists are available. ";
+                results2.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                results2.Range.Font.Size = 11;
+                results2.Range.Font.Name = "Candara";
+                results2.Range.InsertParagraphAfter();
 
 
-                
+                //Results Checklist
+
+
+
+
+
 
                 //Save the document to My documents folder
                 string docfolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
