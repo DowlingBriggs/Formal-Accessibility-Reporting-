@@ -88,42 +88,18 @@ namespace ETA_Report_Creator
                 //Create a new document
                 Microsoft.Office.Interop.Word.Document document = winword.Documents.Add(ref missing, ref missing, ref missing, ref missing);
 
-                /*
-                //Add header into the document
-                foreach (Microsoft.Office.Interop.Word.Section section in document.Sections)
-                {
-                    //Get the header range and add the header details.
-                    Microsoft.Office.Interop.Word.Range headerRange = section.Headers[Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
-                    headerRange.Fields.Add(headerRange, Microsoft.Office.Interop.Word.WdFieldType.wdFieldPage);
-                    headerRange.ParagraphFormat.Alignment = Microsoft.Office.Interop.Word.WdParagraphAlignment.wdAlignParagraphCenter;
-                    headerRange.Font.ColorIndex = Microsoft.Office.Interop.Word.WdColorIndex.wdBlue;
-                    headerRange.Font.Size = 10;
-                    headerRange.Text = "Header text goes here";
-                }
-
-                //Add the footers into the document
-                foreach (Microsoft.Office.Interop.Word.Section wordSection in document.Sections)
-                {
-                    //Get the footer range and add the footer details.
-                    Microsoft.Office.Interop.Word.Range footerRange = wordSection.Footers[Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
-                    footerRange.Font.ColorIndex = Microsoft.Office.Interop.Word.WdColorIndex.wdDarkRed;
-                    footerRange.Font.Size =10;
-                    footerRange.ParagraphFormat.Alignment = Microsoft.Office.Interop.Word.WdParagraphAlignment.wdAlignParagraphCenter;
-                    footerRange.Text = "Footer text goes here";
-                }
-
-                //adding text to document
-                document.Content.SetRange(0, 0);
-                document.Content.Text = "This is test document "+ Environment.NewLine;
-                */
-
-
+                //Styles
                 object Title = "Title";
                 object Header1 = "Heading 1";
-                object SublteReference = "Subtle Reference";
+                object SubtleReference = "Subtle Reference";
+                object SubtleEmph = "Subtle Emphasis";
                 object NoSpacing = "No Spacing";
+                object ListPara = "List Paragraph";
 
-                //Report title -- Site name
+
+                //Title Section 
+
+                //Report title Site name
                 Paragraph title1 = document.Content.Paragraphs.Add(ref missing);
                 string siteNameCap = ReportCreator.siteName.ToUpper();
                 title1.Range.Text = siteNameCap + " ";
@@ -134,6 +110,7 @@ namespace ETA_Report_Creator
                 title1.Range.Borders[WdBorderType.wdBorderTop].LineStyle = WdLineStyle.wdLineStyleDot;
                 title1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;                
                 title1.Range.InsertParagraphAfter();
+
                 //Report title part 2
                 Paragraph title2 = document.Content.Paragraphs.Add(ref missing);
                 title2.Range.Text = "WEBSITE ACCESSIBILITY REPORT";
@@ -145,63 +122,78 @@ namespace ETA_Report_Creator
                 title2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
                 title2.Range.InsertParagraphAfter();
                 
-                //Text is stuck formatted to all uppercase??
                 //Report title Tester Name
                 Paragraph title3 = document.Content.Paragraphs.Add(ref missing);
-                title3.Range.set_Style(ref SublteReference);
                 title3.Range.Text = "Submitted by " + ReportCreator.testerName;
-                title3.Range.Font.Name = "Candara (Body)";
+                title3.Range.set_Style(ref NoSpacing);
+                title3.Range.Font.Name = "Candara";
                 title3.Range.Font.Italic = 1;
                 title3.Range.Font.ColorIndex = WdColorIndex.wdBlack;
                 title3.Range.Font.Size = 11;                
-                
                 title3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
                 title3.Range.InsertParagraphAfter();
 
+                //Report title ETA
+                title3.Range.Text = "Emerging Technology and Accessibility";
+                title3.Range.Font.Name = "Candara";
+                title3.Range.Font.Italic = 1;
+                title3.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                title3.Range.Font.Size = 11;
+                title3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                title3.Range.InsertParagraphAfter();
+
+                //Report title OIT
+                title3.Range.Text = "Office of Information Technology";
+                title3.Range.Font.Name = "Candara";
+                title3.Range.Font.Italic = 1;
+                title3.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                title3.Range.Font.Size = 11;
+                title3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                title3.Range.InsertParagraphAfter();
+
+                //Report title Date
+                string day = DateTime.Now.Day.ToString();
+                string month = DateTime.Now.ToString("MMMM");
+                string year = DateTime.Now.Year.ToString();
+                title3.Range.Text = day+" "+month+" "+year;
+                title3.Range.Font.Name = "Candara";
+                title3.Range.Font.Italic = 1;
+                title3.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                title3.Range.Font.Size = 11;
+                title3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                title3.Range.InsertParagraphAfter();
+
+                //Summary Section
+
+                //Summary 
+                //Report title part 2
+                Paragraph summary1 = document.Content.Paragraphs.Add(ref missing);
+                summary1.Range.Text = "SUMMARY";
+                summary1.Range.set_Style(ref Header1);
+                summary1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                summary1.Range.Font.Size = 12;
+                summary1.Range.Font.Name = "Candara";
+                summary1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
+                //title2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                summary1.Range.InsertParagraphAfter();
+                summary1.Range.InsertParagraphAfter();
+
+                //Summary paragraph
+                Paragraph summary2 = document.Content.Paragraphs.Add(ref missing);
+                summary2.Range.Text = "This report summarizes the accessibility review of University of Alabama Adapted Athletics web pages."
+                    +" 25 pages were examined using a checklist derived from the World Wide Web Consortium Web Content Accessibility Guidelines, the emerging standard for web accessibility."
+                    +" The sites/pages were reviewed in Fall 2017 by the Office of Information Technology Emerging Technology and Accessibility (ETA) team."
+                    +" It is hoped that this initial evaluation will offer insight into the accessibility of these UA web pages and suggest future steps to"
+                    +" improve the accessibility of the Office of Information Technology’s web presence. ";
+                summary2.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                summary2.Range.Font.Size = 11;
+                summary2.Range.Font.Name = "Candara";
+                summary2.Range.InsertParagraphAfter();
 
 
 
 
-
-
-
-                //Add paragraph with Heading 2 style
-                Microsoft.Office.Interop.Word.Paragraph para2 = document.Content.Paragraphs.Add(ref missing);
-                object styleHeading2 = "Heading 2";
-                para2.Range.set_Style(ref styleHeading2);
-                para2.Range.Text = "Para 2 text";
-                para2.Range.InsertParagraphAfter();
-
-                //Create a 5X5 table and insert some dummy record
-                Table firstTable = document.Tables.Add(title1.Range, 5, 5, ref missing, ref missing);
                 
-                firstTable.Borders.Enable = 1;
-                foreach (Row row in firstTable.Rows)
-                {
-                    foreach (Cell cell in row.Cells)
-                    {
-                        //Header row
-                        if (cell.RowIndex == 1)
-                        {
-                            cell.Range.Text = "Column " + cell.ColumnIndex.ToString();
-                            cell.Range.Font.Bold = 1;
-                            //other format properties goes here
-                            cell.Range.Font.Name = "verdana";
-                            cell.Range.Font.Size = 10;
-                            //cell.Range.Font.ColorIndex = WdColorIndex.wdGray25;                            
-                            cell.Shading.BackgroundPatternColor = WdColor.wdColorGray25;
-                            //Center alignment for the Header cells
-                            cell.VerticalAlignment = WdCellVerticalAlignment.wdCellAlignVerticalCenter;
-                            cell.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
-                            
-                        }
-                        //Data row
-                        else
-                        {
-                            cell.Range.Text = (cell.RowIndex - 2 + cell.ColumnIndex).ToString();
-                        }
-                    }
-                }
 
                 //Save the document to My documents folder
                 string docfolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
