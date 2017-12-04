@@ -16,6 +16,7 @@ namespace ETA_Report_Creator
         //initializing global variables
         public static string siteName;
         public static string testerName;
+        public static string pagesTested;
 
         public ReportCreator()
         {
@@ -41,6 +42,7 @@ namespace ETA_Report_Creator
             //Sets site name and tester name to global variables
             siteName = reportCreator_siteNameText.Text;
             testerName = reportCreator_testerNameText.Text;
+            pagesTested = reportCreator_pagesTested.Text;
 
             //Closes current form, passes objects and opens SiteEval form
             this.Hide();

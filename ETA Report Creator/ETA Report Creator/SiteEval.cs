@@ -178,8 +178,10 @@ namespace ETA_Report_Creator
 
                 //Summary paragraph
                 Paragraph summary2 = document.Content.Paragraphs.Add(ref missing);
-                summary2.Range.Text = "This report summarizes the accessibility review of University of Alabama Adapted Athletics web pages."
-                    +" 25 pages were examined using a checklist derived from the World Wide Web Consortium Web Content Accessibility Guidelines, the emerging standard for web accessibility."
+                string pagesTested = ReportCreator.pagesTested;
+                summary2.Range.Text = "This report summarizes the accessibility review of University of Alabama Adapted Athletics web pages. "
+                    + pagesTested
+                    +" pages were examined using a checklist derived from the World Wide Web Consortium Web Content Accessibility Guidelines, the emerging standard for web accessibility."
                     +" The sites/pages were reviewed in Fall 2017 by the Office of Information Technology Emerging Technology and Accessibility (ETA) team."
                     +" It is hoped that this initial evaluation will offer insight into the accessibility of these UA web pages and suggest future steps to"
                     +" improve the accessibility of the Office of Information Technology’s web presence. ";
@@ -215,13 +217,180 @@ namespace ETA_Report_Creator
 
                 //Results Checklist
 
+                //Create list
+                var resultsList = new List<string>();
 
+                // Add items to the list. If radiobutton is false, add related message
+                if (rb_f1.Checked == true)
+                {
+                    resultsList.Add("Not all functionality is available by using only the keyboard (Tab, Shift +Tab, Enter, etc.)");
+                }
+                if (rb_f2.Checked == true)
+                {
+                    resultsList.Add("Page structure: Most, if not all, pages examined lack a link that allows users to “skip navigation” or “skip to main content”.");
+                }
+                if (rb_f3.Checked == true)
+                {
+                    //resultsList.Add("");
+                }
+                if (rb_f4.Checked == true)
+                {
+                    //resultsList.Add("");
+                }
+
+                //Convert list to array
+                var bulletItems = resultsList.ToArray();
+
+                //Created bulleted list
+                Paragraph assets = document.Content.Paragraphs.Add();
+                assets.Range.ListFormat.ApplyBulletDefault();
+                
+                    for (int i = 0; i < bulletItems.Length; i++)
+                    {
+                        string bulletItem = bulletItems[i];
+                        if (i < bulletItems.Length - 1)
+                            bulletItem = bulletItem + "\n";
+                        assets.Range.InsertBefore(bulletItem);
+                    }
+
+
+
+                //Potential Next Steps Section
+
+                //Potential Next Steps Title
+                Paragraph nextsteps1 = document.Content.Paragraphs.Add(ref missing);
+                nextsteps1.Range.Text = "POTENTIAL NEXT STEPS";
+                nextsteps1.Range.set_Style(ref Header1);
+                nextsteps1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                nextsteps1.Range.Font.Size = 12;
+                nextsteps1.Range.Font.Name = "Candara";
+                nextsteps1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
+                nextsteps1.Range.InsertParagraphAfter();
+                nextsteps1.Range.InsertParagraphAfter();
+
+                //Create list
+                var nextStepsList = new List<string>();
+
+                // Add items to the list. If radiobutton is false, add related message
+                if (rb_f1.Checked == true)
+                {
+                    resultsList.Add("Not all functionality is available by using only the keyboard (Tab, Shift +Tab, Enter, etc.)");
+                }
+                if (rb_f2.Checked == true)
+                {
+                    resultsList.Add("Page structure: Most, if not all, pages examined lack a link that allows users to “skip navigation” or “skip to main content”.");
+                }
+                if (rb_f3.Checked == true)
+                {
+                    //resultsList.Add("");
+                }
+                if (rb_f4.Checked == true)
+                {
+                    //resultsList.Add("");
+                }
+
+                //Convert list to array
+                var bulletItems_nextSteps = nextStepsList.ToArray();
+
+                //Created bulleted list
+                Paragraph nextSteps = document.Content.Paragraphs.Add();
+                nextSteps.Range.ListFormat.ApplyBulletDefault();
+          
+                for (int i = 0; i < bulletItems_nextSteps.Length; i++)
+                {
+                    string bulletItem_nextSteps = bulletItems_nextSteps[i];
+                    if (i < bulletItems_nextSteps.Length - 1)
+                        bulletItem_nextSteps = bulletItem_nextSteps + "\n";
+                    nextSteps.Range.InsertBefore(bulletItem_nextSteps);
+                }
+
+
+                
+                //Testing Process Section
+
+                //Testing Process Title
+                Paragraph process1 = document.Content.Paragraphs.Add(ref missing);
+                process1.Range.Text = "TESTING PROCESS";
+                process1.Range.set_Style(ref Header1);
+                process1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                process1.Range.Font.Size = 12;
+                process1.Range.Font.Name = "Candara";
+                process1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
+                process1.Range.InsertParagraphAfter();
+
+                //Process paragraph
+                Paragraph process2 = document.Content.Paragraphs.Add(ref missing);
+                process2.Range.Text = "The AMP automated tool (Accessibility Management Platform) was used as an initial evaluation of page accessibility to find potential errors and alerts related to WCAG 2.0 A/AA." 
+                    +" Each page was then checked manually based on 37 criteria, summarized below, and status documented as Pass, Fail with explanation, or N/A (not applicable)." 
+                    +" Pages were evaluated by at least two individuals from the Center for Instructional Technology Emerging Technology and Accessibility team." 
+                    +" Checklists for each page, which include details regarding accessibility issues, are available. ";
+                process2.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                process2.Range.Font.Size = 11;
+                process2.Range.Font.Name = "Candara";
+                process2.Range.InsertParagraphAfter();
+
+
+               /* Paragraph process = document.Content.Paragraphs.Add(ref missing);
+                //Range range = document.Range(0, 0);
+                process.ListFormat.ApplyNumberDefault();
+                    process.Text = "Keyboard accessibility:";
+                    process.InsertParagraphAfter();
+                    ListTemplate listTemplate = process.ListFormat.ListTemplate;
+
+                    //range.InsertAfter("Birinci");
+                    //range.InsertParagraphAfter();
+
+                    //range.InsertAfter("İkinci");
+                    //range.InsertParagraphAfter();
+
+                    //range.InsertAfter("Üçüncü");
+                    //range.InsertParagraphAfter();
+
+                    Range subRange = document.Range(process.StoryLength - 1);
+                    subRange.ListFormat.ApplyBulletDefault();
+                    subRange.ListFormat.ListIndent();
+                    subRange.Text = "All functionality, including forms, dialog boxes, and pop-ups, is available using only the keyboard (tab, shift + tab, enter, etc.). ";
+                    subRange.InsertParagraphAfter();
+                    ListTemplate sublistTemplate = subRange.ListFormat.ListTemplate;
+
+                    Range subRange2 = document.Range(subRange.StoryLength - 1);
+                    subRange2.ListFormat.ApplyListTemplate(sublistTemplate);
+                    subRange2.ListFormat.ListIndent();
+                    subRange2.Text = @"A ""skip navigation"" link is available.";
+                    subRange2.InsertParagraphAfter();
+
+                    Range subRange3 = document.Range(subRange.StoryLength - 1);
+                    subRange3.ListFormat.ApplyListTemplate(sublistTemplate);
+                    subRange3.ListFormat.ListIndent();
+                    subRange3.Text = "Navigation order is logical.";
+                    subRange3.InsertParagraphAfter();
+
+                    Range subRange4 = document.Range(subRange.StoryLength - 1);
+                    subRange4.ListFormat.ApplyListTemplate(sublistTemplate);
+                    subRange4.ListFormat.ListIndent();
+                    subRange4.Text = "A visible keyboard focus indicator/outline is present.";
+                    subRange4.InsertParagraphAfter();
+
+                Range range2 = document.Range(process.StoryLength - 1);
+                    range2.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                    WdContinue isContinue = range2.ListFormat.CanContinuePreviousList(listTemplate);
+                    range2.Text = "İkinci";
+                    range2.InsertParagraphAfter();
+
+                    Range range3 = document.Range(range2.StoryLength - 1);
+                    range3.ListFormat.ApplyListTemplate(listTemplate);
+                    range3.Text = "Üçüncü";
+                    range3.InsertParagraphAfter();
+
+
+                */
 
 
 
 
                 //Save the document to My documents folder
                 string docfolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
                 //Naming the document
                 string mnth = DateTime.Now.Month.ToString();
                 string yr = DateTime.Now.Year.ToString();
@@ -240,7 +409,7 @@ namespace ETA_Report_Creator
             }
         }
 
-
+        //Validate to make sure all radio button groups have been selected
         private bool validateCB()
         {
             bool isAnyRadioButtonChecked = false;
@@ -366,14 +535,6 @@ namespace ETA_Report_Creator
                 }
             }
             */
-
-
-
-
-
-
-
-
 
             return isAnyRadioButtonChecked;
         }

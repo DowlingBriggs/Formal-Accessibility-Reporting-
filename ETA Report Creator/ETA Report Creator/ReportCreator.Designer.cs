@@ -35,6 +35,9 @@
             this.reportCreator_date = new System.Windows.Forms.Label();
             this.reportCreator_next = new System.Windows.Forms.Button();
             this.reportCreator_cancel = new System.Windows.Forms.Button();
+            this.reportCreator_pagesTested = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.reportCreator_pagesTested)).BeginInit();
             this.SuspendLayout();
             // 
             // reportCreator_siteNameText
@@ -73,18 +76,19 @@
             // reportCreator_date
             // 
             this.reportCreator_date.AutoSize = true;
-            this.reportCreator_date.Location = new System.Drawing.Point(9, 121);
+            this.reportCreator_date.Location = new System.Drawing.Point(9, 173);
             this.reportCreator_date.Name = "reportCreator_date";
-            this.reportCreator_date.Size = new System.Drawing.Size(0, 13);
+            this.reportCreator_date.Size = new System.Drawing.Size(28, 13);
             this.reportCreator_date.TabIndex = 4;
+            this.reportCreator_date.Text = "date";
             this.reportCreator_date.Click += new System.EventHandler(this.label3_Click);
             // 
             // reportCreator_next
             // 
-            this.reportCreator_next.Location = new System.Drawing.Point(12, 149);
+            this.reportCreator_next.Location = new System.Drawing.Point(12, 208);
             this.reportCreator_next.Name = "reportCreator_next";
             this.reportCreator_next.Size = new System.Drawing.Size(75, 23);
-            this.reportCreator_next.TabIndex = 7;
+            this.reportCreator_next.TabIndex = 9;
             this.reportCreator_next.Text = "Next";
             this.reportCreator_next.UseVisualStyleBackColor = true;
             this.reportCreator_next.Click += new System.EventHandler(this.reportCreator_next_Click);
@@ -92,13 +96,29 @@
             // reportCreator_cancel
             // 
             this.reportCreator_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.reportCreator_cancel.Location = new System.Drawing.Point(134, 149);
+            this.reportCreator_cancel.Location = new System.Drawing.Point(134, 208);
             this.reportCreator_cancel.Name = "reportCreator_cancel";
             this.reportCreator_cancel.Size = new System.Drawing.Size(75, 23);
-            this.reportCreator_cancel.TabIndex = 8;
+            this.reportCreator_cancel.TabIndex = 10;
             this.reportCreator_cancel.Text = "Cancel";
             this.reportCreator_cancel.UseVisualStyleBackColor = true;
             this.reportCreator_cancel.Click += new System.EventHandler(this.reportCreator_cancel_Click);
+            // 
+            // reportCreator_pagesTested
+            // 
+            this.reportCreator_pagesTested.Location = new System.Drawing.Point(12, 136);
+            this.reportCreator_pagesTested.Name = "reportCreator_pagesTested";
+            this.reportCreator_pagesTested.Size = new System.Drawing.Size(120, 20);
+            this.reportCreator_pagesTested.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Pages Tested";
             // 
             // ReportCreator
             // 
@@ -106,7 +126,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.reportCreator_cancel;
-            this.ClientSize = new System.Drawing.Size(218, 183);
+            this.ClientSize = new System.Drawing.Size(218, 240);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.reportCreator_pagesTested);
             this.Controls.Add(this.reportCreator_cancel);
             this.Controls.Add(this.reportCreator_next);
             this.Controls.Add(this.reportCreator_date);
@@ -116,6 +138,7 @@
             this.Controls.Add(this.reportCreator_siteNameText);
             this.Name = "ReportCreator";
             this.Text = "Report Creator";
+            ((System.ComponentModel.ISupportInitialize)(this.reportCreator_pagesTested)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,6 +153,8 @@
         private System.Windows.Forms.Label reportCreator_date;
         private System.Windows.Forms.Button reportCreator_next;
         private System.Windows.Forms.Button reportCreator_cancel;
+        private System.Windows.Forms.NumericUpDown reportCreator_pagesTested;
+        private System.Windows.Forms.Label label3;
     }
 }
 
