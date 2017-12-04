@@ -330,60 +330,67 @@ namespace ETA_Report_Creator
                 process2.Range.InsertParagraphAfter();
 
 
-               /* Paragraph process = document.Content.Paragraphs.Add(ref missing);
-                //Range range = document.Range(0, 0);
-                process.ListFormat.ApplyNumberDefault();
-                    process.Text = "Keyboard accessibility:";
-                    process.InsertParagraphAfter();
-                    ListTemplate listTemplate = process.ListFormat.ListTemplate;
+                //Process List
+                /*
+                //Range range = document.Application.Selection.Range;
+                ListGallery listGallery = document.Application.ListGalleries[WdListGalleryType.wdBulletGallery];
+                //Paragraph process3 = null;
+                ListFormat listFormat = null;
 
-                    //range.InsertAfter("Birinci");
-                    //range.InsertParagraphAfter();
+                // TODO At the end of the document, the ranges are automatically expanded and inbetween not?
 
-                    //range.InsertAfter("İkinci");
-                    //range.InsertParagraphAfter();
+                Paragraph process3 = document.Content.Paragraphs.Add(ref missing);
+                listFormat = process3.Range.ListFormat;
+                process3.Range.Text = "Root Item A";
+                this.ApplyListTemplate(listGallery, listFormat, 1);
+                process3.Range.InsertParagraphAfter();
 
-                    //range.InsertAfter("Üçüncü");
-                    //range.InsertParagraphAfter();
+                Paragraph process4 = process3.Range.Paragraphs.Add();
+                listFormat = process4.Range.ListFormat;
+                process4.Range.Text = "Child Item A.1";
+                this.ApplyListTemplate(listGallery, listFormat, 2);
+                process4.Range.InsertParagraphAfter();
 
-                    Range subRange = document.Range(process.StoryLength - 1);
-                    subRange.ListFormat.ApplyBulletDefault();
-                    subRange.ListFormat.ListIndent();
-                    subRange.Text = "All functionality, including forms, dialog boxes, and pop-ups, is available using only the keyboard (tab, shift + tab, enter, etc.). ";
-                    subRange.InsertParagraphAfter();
-                    ListTemplate sublistTemplate = subRange.ListFormat.ListTemplate;
+                process3 = process3.Range.Paragraphs.Add();
+                listFormat = process3.Range.ListFormat;
+                process3.Range.Text = "Child Item A.2";
+                this.ApplyListTemplate(listGallery, listFormat, 2);
+                process3.Range.InsertParagraphAfter();
 
-                    Range subRange2 = document.Range(subRange.StoryLength - 1);
-                    subRange2.ListFormat.ApplyListTemplate(sublistTemplate);
-                    subRange2.ListFormat.ListIndent();
-                    subRange2.Text = @"A ""skip navigation"" link is available.";
-                    subRange2.InsertParagraphAfter();
+                process3 = process3.Range.Paragraphs.Add();
+                listFormat = process3.Range.ListFormat;
+                process3.Range.Text = "Root Item B";
+                this.ApplyListTemplate(listGallery, listFormat, 1);
+                process3.Range.InsertParagraphAfter();
+                
 
-                    Range subRange3 = document.Range(subRange.StoryLength - 1);
-                    subRange3.ListFormat.ApplyListTemplate(sublistTemplate);
-                    subRange3.ListFormat.ListIndent();
-                    subRange3.Text = "Navigation order is logical.";
-                    subRange3.InsertParagraphAfter();
+                ListTemplate listTemplate = document.Application.ListGalleries[WdListGalleryType.wdOutlineNumberGallery].ListTemplates[1];
 
-                    Range subRange4 = document.Range(subRange.StoryLength - 1);
-                    subRange4.ListFormat.ApplyListTemplate(sublistTemplate);
-                    subRange4.ListFormat.ListIndent();
-                    subRange4.Text = "A visible keyboard focus indicator/outline is present.";
-                    subRange4.InsertParagraphAfter();
+                listTemplate.ListLevels[1].NumberFormat = "%1.";
+                listTemplate.ListLevels[1].NumberStyle = WdListNumberStyle.wdListNumberStyleArabic;
+                listTemplate.ListLevels[2].NumberFormat = "%2.";
+                listTemplate.ListLevels[2].NumberStyle = WdListNumberStyle.wdListNumberStyleArabic;
 
-                Range range2 = document.Range(process.StoryLength - 1);
-                    range2.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
-                    WdContinue isContinue = range2.ListFormat.CanContinuePreviousList(listTemplate);
-                    range2.Text = "İkinci";
-                    range2.InsertParagraphAfter();
+                range.ListFormat.ApplyListTemplateWithLevel(listTemplate, true, WdListApplyTo.wdListApplyToWholeList, WdDefaultListBehavior.wdWord10ListBehavior, 1);
+                int rangeLength = range.StoryLength - 1;
 
-                    Range range3 = document.Range(range2.StoryLength - 1);
-                    range3.ListFormat.ApplyListTemplate(listTemplate);
-                    range3.Text = "Üçüncü";
-                    range3.InsertParagraphAfter();
+                range.Text = "Birinci";
+                range.InsertParagraphAfter();
 
+                Word.Range subRange = doc.Range(range.StoryLength - 1);
+                subRange.Text = "Alt Birinci";
+                subRange.InsertParagraphAfter();
 
+                subRange.SetListLevel(2);
+                Word.Range subRange2 = doc.Range(subRange.StoryLength - 1);
+                subRange2.Text = "Alt İkinci";
+                subRange2.InsertParagraphAfter();
+                Word.Range range2 = doc.Range(range.StoryLength - 1);
+                range2.Text = "İkinci";
+                range2.InsertParagraphAfter();
+                range2.SetListLevel(1);
                 */
+
 
 
 
@@ -407,6 +414,17 @@ namespace ETA_Report_Creator
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+
+        private void ApplyListTemplate(Microsoft.Office.Interop.Word.ListGallery listGallery, Microsoft.Office.Interop.Word.ListFormat listFormat, int level = 1)
+        {
+            listFormat.ApplyListTemplateWithLevel(
+                listGallery.ListTemplates[level],
+                ContinuePreviousList: true,
+                ApplyTo: Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection,
+                DefaultListBehavior: Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord10ListBehavior,
+                ApplyLevel: level);
         }
 
         //Validate to make sure all radio button groups have been selected
