@@ -335,7 +335,7 @@ namespace ETA_Report_Creator
     
                 
                                 Paragraph p1 = document.Content.Paragraphs.Add();
-                                Range range = document.Range(0, 0);
+                                Range range = document.Range(0,0);
                                 p1.Range.ListFormat.ApplyBulletDefault();
                                 p1.Range.Text = "Birinci";
                                 p1.Range.ListFormat.ApplyBulletDefault();
@@ -346,20 +346,18 @@ namespace ETA_Report_Creator
                                 Range subRange = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength -1);
                                 subRange.ListFormat.ApplyBulletDefault();
                                 subRange.ListFormat.ListIndent();
-                                subRange.Text = "Alt Birinci";
+                                subRange.Text = ">" + "Alt Birinci";
                                 subRange.InsertParagraphAfter();
                                 ListTemplate sublistTemplate = subRange.ListFormat.ListTemplate;
 
 
-            
-                                
                 /*
-                Range subRange2 = document.Range(subRange.StoryLength - 1, p1.Range.StoryLength - 1);
-                subRange2.ListFormat.ApplyListTemplate(sublistTemplate);
-                subRange2.ListFormat.ListIndent();
-                subRange2.Text = "Alt İkinci";
-                subRange2.InsertParagraphAfter();
-                */
+                                     Range subRange2 = document.Range(p1.Range.StoryLength - 2, p1.Range.StoryLength - 2);
+                                    subRange2.ListFormat.ApplyListTemplate(sublistTemplate);
+                                     subRange2.ListFormat.ListIndent();
+                                    subRange2.Text = ">" + "Alt İkinci";
+                                    subRange2.InsertParagraphAfter();
+                    */
 
                 /* Range range2 = document.Range(p1.Range.StoryLength - 1);
                  range2.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
@@ -367,6 +365,36 @@ namespace ETA_Report_Creator
                  range2.Text = "İkinci";
                  range2.InsertParagraphAfter();
                  */
+
+
+                //Federal Action Regarding Accessibility in Higher Education Section
+
+                //Fed Action Title
+
+                Paragraph fedAction1 = document.Content.Paragraphs.Add(ref missing);
+                fedAction1.Range.Text = "FEDERAL ACTION REGARDING ACCESSIBILITY IN HIGHER EDUCATION";
+                fedAction1.Range.set_Style(ref Header1);
+                fedAction1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                fedAction1.Range.Font.Size = 12;
+                fedAction1.Range.Font.Name = "Candara";
+                fedAction1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
+                fedAction1.Range.InsertParagraphAfter();
+
+                //Fed Action Paragraph
+
+                Paragraph fedAction2 = document.Content.Paragraphs.Add(ref missing);
+                process2.Range.Text = "Why does web accessibility matter? While we are focused on meeting stakeholder needs and recognize that accessibility is one very important way to do this, there are also legal reasons to make sure web resources are accessible." + "\r\n"
+                    + "In the past few years, the following institutions have faced review of their web and/or instructional technology by the US Department of Education Office of Civil Rights and the US Department of Justice. In these cases, the institution has been required to make web sites, instructional technology, or other online materials accessible. When specific standards are named, institutions are expected to follow Web Content Accessibility Guidelines (WCAG) 2.0 A and AA:";
+                process2.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                process2.Range.Font.Size = 11;
+                process2.Range.Font.Name = "Candara";
+                process2.Range.InsertParagraphAfter();
+
+
+
+
+
+
 
 
 
