@@ -321,41 +321,132 @@ namespace ETA_Report_Creator
                 p1.Range.InsertParagraphAfter();
                 ListTemplate listTemplate = p1.Range.ListFormat.ListTemplate;
 
-                //Paragraph p2 = document.Content.Paragraphs.Add();
                 Range subRange = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
-                //subRange.ListFormat.ApplyBulletDefault();
+                //subRange.ListFormat.ListIndent();
                 subRange.ListFormat.ListIndent();
-                subRange.Text = "All functionality, including forms, dialog boxes, and pop-ups, is available using only the keyboard(tab, shift + tab, enter, etc.).\n"
-                    + @"A ""skip navigation"" link is available.";
+                subRange.Text = "All functionality, including forms, dialog boxes, and pop-ups, is available using only the keyboard (tab, shift + tab, enter, etc.).\n"
+                    + @"A ""skip navigation"" link is available."
+                    + "\nNavigation order is logical."
+                    + "\nA visible keyboard focus indicator/outline is present.";
                 ListTemplate sublistTemplate = subRange.ListFormat.ListTemplate;
                 p1.Range.InsertParagraphAfter();
-
-
-
-                /* Range subRange2 = document.Range(p1.Range.StoryLength - 2, p1.Range.StoryLength - 2);
-                                     subRange2.ListFormat.ApplyListTemplate(sublistTemplate);
-                 subRange2.InsertParagraphAfter();
-                 p1.Range.InsertParagraphAfter();
-                 subRange2.ListFormat.ListIndent();
-                                     subRange2.Text = "Alt İkinci";
-                                     subRange2.InsertParagraphAfter();
-                                     */
-
 
                 Range range2 = document.Range(p1.Range.StoryLength - 1);
                 range2.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
                 WdContinue isContinue = range2.ListFormat.CanContinuePreviousList(listTemplate);
-                range2.Text = "İkinci";
+                range2.Text = "Form accessibility and usability:";
                 range2.InsertParagraphAfter();
 
+                Range subRange2 = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
+                subRange2.ListFormat.ListIndent();
+                subRange2.Text = "Form fields are properly labeled. If a label is not visible, a hidden label or descriptive title attribute exists. \n"
+                    + "Error recovery mechanisms are present and easy-to-use.";
+                p1.Range.InsertParagraphAfter();
+
+                Range range3 = document.Range(p1.Range.StoryLength - 1);
+                range3.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue2 = range3.ListFormat.CanContinuePreviousList(listTemplate);
+                range3.Text = "Color and contrast:";
+                range3.InsertParagraphAfter();
+
+                Range subRange3 = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
+                subRange3.ListFormat.ListIndent();
+                subRange3.Text = "Contrast is sufficient so that text is visible to persons with vision impairment such as color-blindness."
+                    +"\nLinks are underlined and change adequately when hovered over or with keyboard focus."
+                    +"\nColor is not used as the sole method of conveying content or distinguishing visual elements.";
+                p1.Range.InsertParagraphAfter();
+
+                Range range4 = document.Range(p1.Range.StoryLength - 1);
+                range4.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue3 = range4.ListFormat.CanContinuePreviousList(listTemplate);
+                range4.Text = "Images";
+                range4.InsertParagraphAfter();
+
+                Range subRange4 = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
+                subRange4.ListFormat.ListIndent();
+                subRange4.Text = "Alternative text is present for all images and conveys the content and function of the image in a succinct, accurate, and useful manner."
+                    +"\nTrue text is used in lieu of images of text.";
+                p1.Range.InsertParagraphAfter();
+
+                Range range5 = document.Range(p1.Range.StoryLength - 1);
+                range5.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue4 = range5.ListFormat.CanContinuePreviousList(listTemplate);
+                range5.Text = "Content scaling";
+                range5.InsertParagraphAfter();
+
+                Range subRange5 = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
+                subRange5.ListFormat.ListIndent();
+                subRange5.Text = "With text enlarged (with or without images enlarged) the text is readable and usable and horizontal scrolling is minimized.";
+                p1.Range.InsertParagraphAfter();
+
+                Range range6 = document.Range(p1.Range.StoryLength - 1);
+                range6.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue5 = range6.ListFormat.CanContinuePreviousList(listTemplate);
+                range6.Text = "Page structure";
+                range6.InsertParagraphAfter();
+
+                Range subRange6 = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
+                subRange6.ListFormat.ListIndent();
+                subRange6.Text = "The main heading on the page is an <h1>. No more than 2 H1s are used. No heading levels are skipped or empty. Headings are properly nested. Headings contain meaningful information." 
+                    +"\nThe page<title> is unique and descriptive."
+                    +"\nWith styles disabled and tables linearized, the reading order is logical and content is understandable and usable.";
+                p1.Range.InsertParagraphAfter();
+
+                Range range7 = document.Range(p1.Range.StoryLength - 1);
+                range7.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue6 = range7.ListFormat.CanContinuePreviousList(listTemplate);
+                range7.Text = "Screen reader testing";
+                range7.InsertParagraphAfter();
+
+                Range subRange7 = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
+                subRange7.ListFormat.ListIndent();
+                subRange7.Text = "Using a screen reader, all page navigation is available and all forms are navigable."
+                    +"\nDynamic pages read accurately."
+                    +"\nNo repetitive elements are present.";
+                p1.Range.InsertParagraphAfter();
+
+                Range range8 = document.Range(p1.Range.StoryLength - 1);
+                range8.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue7 = range8.ListFormat.CanContinuePreviousList(listTemplate);
+                range8.Text = "All videos and multimedia have captions and/or transcripts.";
+                range8.InsertParagraphAfter();
+
+                Range range9 = document.Range(p1.Range.StoryLength - 1);
+                range9.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue8 = range9.ListFormat.CanContinuePreviousList(listTemplate);
+                range9.Text = "Animating or updating content or media can be paused and stopped. ";
+                range9.InsertParagraphAfter();
+
+                Range range10 = document.Range(p1.Range.StoryLength - 1);
+                range10.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue9 = range10.ListFormat.CanContinuePreviousList(listTemplate);
+                range10.Text = @"There are no generic links like ""click here.""";
+                range10.InsertParagraphAfter();
+
+                Range range11 = document.Range(p1.Range.StoryLength - 1);
+                range11.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue10 = range11.ListFormat.CanContinuePreviousList(listTemplate);
+                range11.Text = "The page language is specified.";
+                range11.InsertParagraphAfter();
+
+                Range range12 = document.Range(p1.Range.StoryLength - 1);
+                range12.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue11 = range12.ListFormat.CanContinuePreviousList(listTemplate);
+                range12.Text = "Instructions do not rely on shape, size, or location.";
+                range12.InsertParagraphAfter();
+
+                Range range13 = document.Range(p1.Range.StoryLength - 1);
+                range13.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                WdContinue isContinue12 = range13.ListFormat.CanContinuePreviousList(listTemplate);
+                range13.Text = "No strobe or flashing content is present that could cause seizures.";
+                range13.InsertParagraphAfter();
 
 
 
 
                 //Federal Action Regarding Accessibility in Higher Education Section
 
-                //Fed Action Title
-
+                //Fed Action Title     
                 Paragraph fedAction1 = document.Content.Paragraphs.Add(ref missing);
                 fedAction1.Range.Text = "FEDERAL ACTION REGARDING ACCESSIBILITY IN HIGHER EDUCATION";
                 fedAction1.Range.set_Style(ref Header1);
@@ -366,7 +457,6 @@ namespace ETA_Report_Creator
                 fedAction1.Range.InsertParagraphAfter();
 
                 //Fed Action Paragraph
-
                 Paragraph fedAction2 = document.Content.Paragraphs.Add(ref missing);
                 process2.Range.Text = "Why does web accessibility matter? While we are focused on meeting stakeholder needs and recognize that accessibility is one very important way to do this, there are also legal reasons to make sure web resources are accessible." + "\r\n"
                     + "In the past few years, the following institutions have faced review of their web and/or instructional technology by the US Department of Education Office of Civil Rights and the US Department of Justice. In these cases, the institution has been required to make web sites, instructional technology, or other online materials accessible. When specific standards are named, institutions are expected to follow Web Content Accessibility Guidelines (WCAG) 2.0 A and AA:";
@@ -377,7 +467,6 @@ namespace ETA_Report_Creator
 
 
                 //Fed Action List
-
                 Paragraph fedActionList = document.Content.Paragraphs.Add();
 
                 fedActionList.Range.ListFormat.ApplyBulletDefault();
@@ -402,7 +491,6 @@ namespace ETA_Report_Creator
                 //Pages Evaluated Section
 
                 //Pages Evaluated Title
-
                 Paragraph eval1 = document.Content.Paragraphs.Add(ref missing);
                 eval1.Range.Text = "PAGES EVALUATED";
                 eval1.Range.set_Style(ref Header1);
