@@ -46,26 +46,6 @@ namespace ETA_Report_Creator
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             
-
-            /*
-           // FileStream F = new FileStream("testdoc2.docx", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            Console.WriteLine("Web Accessibility Report");
-            string filename = @"C:\Users\ETA Etime\Documents\FormCreator_Test";
-            Console.WriteLine(filename);
-            try
-            {
-                using (FileStream fs = File.OpenWrite(filename))
-                {
-                    Byte[] content = new UTF8Encoding(true).GetBytes("Hello I am learning C#");
-                    fs.Write(content, 0, content.Length);
-                }
-            }
-            catch (Exception Ex)
-            {
-                Console.Write(e.ToString());
-            }
-            */
-
         }
 
         //Create document method
@@ -391,8 +371,41 @@ namespace ETA_Report_Creator
                 process2.Range.InsertParagraphAfter();
 
 
+                //Fed Action List
+
+                Paragraph fedActionList = document.Content.Paragraphs.Add();
+
+                fedActionList.Range.ListFormat.ApplyBulletDefault();
+                string[] fedBulletItems = new string[] 
+                {   "Florida State University (June 2014)",
+                    "University of Montana-Missoula (March 2014)",
+                    "Louisiana Tech (July 2013)",
+                    "South Carolina Technical College System (March 2013)",
+                    "University of Montana (August 2012)",
+                    "Penn State University (November 2010)"
+                };
+
+                for (int i = 0; i < fedBulletItems.Length; i++)
+                {
+                    string fedbulletItem = fedBulletItems[i];
+                    if (i < fedBulletItems.Length - 1)
+                        fedbulletItem = fedbulletItem + "\n";
+                    fedActionList.Range.InsertBefore(fedbulletItem);
+                }
 
 
+                //Pages Evaluated Section
+
+                //Pages Evaluated Title
+
+                Paragraph eval1 = document.Content.Paragraphs.Add(ref missing);
+                eval1.Range.Text = "PAGES EVALUATED";
+                eval1.Range.set_Style(ref Header1);
+                eval1.Range.Font.ColorIndex = WdColorIndex.wdBlack;
+                eval1.Range.Font.Size = 12;
+                eval1.Range.Font.Name = "Candara";
+                eval1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
+                eval1.Range.InsertParagraphAfter();
 
 
 
