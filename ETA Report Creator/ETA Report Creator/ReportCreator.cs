@@ -55,5 +55,10 @@ namespace ETA_Report_Creator
         {
 
         }
+
+        private void ReportCreator_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,24 +53,24 @@
             this.rb_f1 = new System.Windows.Forms.RadioButton();
             this.rb_p1 = new System.Windows.Forms.RadioButton();
             this.siteEval_formaccess_groupbox = new System.Windows.Forms.GroupBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.rb_f9 = new System.Windows.Forms.RadioButton();
+            this.rb_p9 = new System.Windows.Forms.RadioButton();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.rb_f8 = new System.Windows.Forms.RadioButton();
+            this.rb_p8 = new System.Windows.Forms.RadioButton();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.rb_f7 = new System.Windows.Forms.RadioButton();
+            this.rb_p7 = new System.Windows.Forms.RadioButton();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.rb_f6 = new System.Windows.Forms.RadioButton();
+            this.rb_p6 = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.siteEval_done = new System.Windows.Forms.Button();
             this.siteEval_exit = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.rb_f6 = new System.Windows.Forms.RadioButton();
-            this.rb_p6 = new System.Windows.Forms.RadioButton();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.rb_f7 = new System.Windows.Forms.RadioButton();
-            this.rb_p7 = new System.Windows.Forms.RadioButton();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.rb_f8 = new System.Windows.Forms.RadioButton();
-            this.rb_p8 = new System.Windows.Forms.RadioButton();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.rb_f9 = new System.Windows.Forms.RadioButton();
-            this.rb_p9 = new System.Windows.Forms.RadioButton();
             this.siteEval_keyAccess_groupbox.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -78,10 +78,10 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.siteEval_formaccess_groupbox.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // eval_siteName
@@ -333,6 +333,122 @@
             this.siteEval_formaccess_groupbox.TabStop = false;
             this.siteEval_formaccess_groupbox.Text = "Form Accessibility and Usability";
             // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.rb_f9);
+            this.panel9.Controls.Add(this.rb_p9);
+            this.panel9.Location = new System.Drawing.Point(552, 126);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(71, 19);
+            this.panel9.TabIndex = 24;
+            // 
+            // rb_f9
+            // 
+            this.rb_f9.AutoSize = true;
+            this.rb_f9.Location = new System.Drawing.Point(51, 3);
+            this.rb_f9.Name = "rb_f9";
+            this.rb_f9.Size = new System.Drawing.Size(14, 13);
+            this.rb_f9.TabIndex = 10;
+            this.rb_f9.TabStop = true;
+            this.rb_f9.UseVisualStyleBackColor = true;
+            // 
+            // rb_p9
+            // 
+            this.rb_p9.AutoSize = true;
+            this.rb_p9.Location = new System.Drawing.Point(3, 3);
+            this.rb_p9.Name = "rb_p9";
+            this.rb_p9.Size = new System.Drawing.Size(14, 13);
+            this.rb_p9.TabIndex = 9;
+            this.rb_p9.TabStop = true;
+            this.rb_p9.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.rb_f8);
+            this.panel8.Controls.Add(this.rb_p8);
+            this.panel8.Location = new System.Drawing.Point(552, 93);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(71, 19);
+            this.panel8.TabIndex = 23;
+            // 
+            // rb_f8
+            // 
+            this.rb_f8.AutoSize = true;
+            this.rb_f8.Location = new System.Drawing.Point(51, 3);
+            this.rb_f8.Name = "rb_f8";
+            this.rb_f8.Size = new System.Drawing.Size(14, 13);
+            this.rb_f8.TabIndex = 10;
+            this.rb_f8.TabStop = true;
+            this.rb_f8.UseVisualStyleBackColor = true;
+            // 
+            // rb_p8
+            // 
+            this.rb_p8.AutoSize = true;
+            this.rb_p8.Location = new System.Drawing.Point(3, 3);
+            this.rb_p8.Name = "rb_p8";
+            this.rb_p8.Size = new System.Drawing.Size(14, 13);
+            this.rb_p8.TabIndex = 9;
+            this.rb_p8.TabStop = true;
+            this.rb_p8.UseVisualStyleBackColor = true;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.rb_f7);
+            this.panel7.Controls.Add(this.rb_p7);
+            this.panel7.Location = new System.Drawing.Point(552, 60);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(71, 19);
+            this.panel7.TabIndex = 22;
+            // 
+            // rb_f7
+            // 
+            this.rb_f7.AutoSize = true;
+            this.rb_f7.Location = new System.Drawing.Point(51, 3);
+            this.rb_f7.Name = "rb_f7";
+            this.rb_f7.Size = new System.Drawing.Size(14, 13);
+            this.rb_f7.TabIndex = 10;
+            this.rb_f7.TabStop = true;
+            this.rb_f7.UseVisualStyleBackColor = true;
+            // 
+            // rb_p7
+            // 
+            this.rb_p7.AutoSize = true;
+            this.rb_p7.Location = new System.Drawing.Point(3, 3);
+            this.rb_p7.Name = "rb_p7";
+            this.rb_p7.Size = new System.Drawing.Size(14, 13);
+            this.rb_p7.TabIndex = 9;
+            this.rb_p7.TabStop = true;
+            this.rb_p7.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.rb_f6);
+            this.panel6.Controls.Add(this.rb_p6);
+            this.panel6.Location = new System.Drawing.Point(552, 20);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(71, 19);
+            this.panel6.TabIndex = 21;
+            // 
+            // rb_f6
+            // 
+            this.rb_f6.AutoSize = true;
+            this.rb_f6.Location = new System.Drawing.Point(51, 3);
+            this.rb_f6.Name = "rb_f6";
+            this.rb_f6.Size = new System.Drawing.Size(14, 13);
+            this.rb_f6.TabIndex = 10;
+            this.rb_f6.TabStop = true;
+            this.rb_f6.UseVisualStyleBackColor = true;
+            // 
+            // rb_p6
+            // 
+            this.rb_p6.AutoSize = true;
+            this.rb_p6.Location = new System.Drawing.Point(3, 3);
+            this.rb_p6.Name = "rb_p6";
+            this.rb_p6.Size = new System.Drawing.Size(14, 13);
+            this.rb_p6.TabIndex = 9;
+            this.rb_p6.TabStop = true;
+            this.rb_p6.UseVisualStyleBackColor = true;
+            // 
             // label10
             // 
             this.label10.Location = new System.Drawing.Point(7, 126);
@@ -379,6 +495,7 @@
             // 
             // siteEval_exit
             // 
+            this.siteEval_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.siteEval_exit.Location = new System.Drawing.Point(584, 435);
             this.siteEval_exit.Name = "siteEval_exit";
             this.siteEval_exit.Size = new System.Drawing.Size(75, 23);
@@ -387,127 +504,13 @@
             this.siteEval_exit.UseVisualStyleBackColor = true;
             this.siteEval_exit.Click += new System.EventHandler(this.siteEval_exit_Click);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.rb_f6);
-            this.panel6.Controls.Add(this.rb_p6);
-            this.panel6.Location = new System.Drawing.Point(552, 20);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(71, 19);
-            this.panel6.TabIndex = 21;
-            // 
-            // rb_f6
-            // 
-            this.rb_f6.AutoSize = true;
-            this.rb_f6.Location = new System.Drawing.Point(51, 3);
-            this.rb_f6.Name = "rb_f6";
-            this.rb_f6.Size = new System.Drawing.Size(14, 13);
-            this.rb_f6.TabIndex = 10;
-            this.rb_f6.TabStop = true;
-            this.rb_f6.UseVisualStyleBackColor = true;
-            // 
-            // rb_p6
-            // 
-            this.rb_p6.AutoSize = true;
-            this.rb_p6.Location = new System.Drawing.Point(3, 3);
-            this.rb_p6.Name = "rb_p6";
-            this.rb_p6.Size = new System.Drawing.Size(14, 13);
-            this.rb_p6.TabIndex = 9;
-            this.rb_p6.TabStop = true;
-            this.rb_p6.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.rb_f7);
-            this.panel7.Controls.Add(this.rb_p7);
-            this.panel7.Location = new System.Drawing.Point(552, 60);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(71, 19);
-            this.panel7.TabIndex = 22;
-            // 
-            // rb_f7
-            // 
-            this.rb_f7.AutoSize = true;
-            this.rb_f7.Location = new System.Drawing.Point(51, 3);
-            this.rb_f7.Name = "rb_f7";
-            this.rb_f7.Size = new System.Drawing.Size(14, 13);
-            this.rb_f7.TabIndex = 10;
-            this.rb_f7.TabStop = true;
-            this.rb_f7.UseVisualStyleBackColor = true;
-            // 
-            // rb_p7
-            // 
-            this.rb_p7.AutoSize = true;
-            this.rb_p7.Location = new System.Drawing.Point(3, 3);
-            this.rb_p7.Name = "rb_p7";
-            this.rb_p7.Size = new System.Drawing.Size(14, 13);
-            this.rb_p7.TabIndex = 9;
-            this.rb_p7.TabStop = true;
-            this.rb_p7.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.rb_f8);
-            this.panel8.Controls.Add(this.rb_p8);
-            this.panel8.Location = new System.Drawing.Point(552, 93);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(71, 19);
-            this.panel8.TabIndex = 23;
-            // 
-            // rb_f8
-            // 
-            this.rb_f8.AutoSize = true;
-            this.rb_f8.Location = new System.Drawing.Point(51, 3);
-            this.rb_f8.Name = "rb_f8";
-            this.rb_f8.Size = new System.Drawing.Size(14, 13);
-            this.rb_f8.TabIndex = 10;
-            this.rb_f8.TabStop = true;
-            this.rb_f8.UseVisualStyleBackColor = true;
-            // 
-            // rb_p8
-            // 
-            this.rb_p8.AutoSize = true;
-            this.rb_p8.Location = new System.Drawing.Point(3, 3);
-            this.rb_p8.Name = "rb_p8";
-            this.rb_p8.Size = new System.Drawing.Size(14, 13);
-            this.rb_p8.TabIndex = 9;
-            this.rb_p8.TabStop = true;
-            this.rb_p8.UseVisualStyleBackColor = true;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.rb_f9);
-            this.panel9.Controls.Add(this.rb_p9);
-            this.panel9.Location = new System.Drawing.Point(552, 126);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(71, 19);
-            this.panel9.TabIndex = 24;
-            // 
-            // rb_f9
-            // 
-            this.rb_f9.AutoSize = true;
-            this.rb_f9.Location = new System.Drawing.Point(51, 3);
-            this.rb_f9.Name = "rb_f9";
-            this.rb_f9.Size = new System.Drawing.Size(14, 13);
-            this.rb_f9.TabIndex = 10;
-            this.rb_f9.TabStop = true;
-            this.rb_f9.UseVisualStyleBackColor = true;
-            // 
-            // rb_p9
-            // 
-            this.rb_p9.AutoSize = true;
-            this.rb_p9.Location = new System.Drawing.Point(3, 3);
-            this.rb_p9.Name = "rb_p9";
-            this.rb_p9.Size = new System.Drawing.Size(14, 13);
-            this.rb_p9.TabIndex = 9;
-            this.rb_p9.TabStop = true;
-            this.rb_p9.UseVisualStyleBackColor = true;
-            // 
             // SiteEval
             // 
+            this.AcceptButton = this.siteEval_done;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.CancelButton = this.siteEval_exit;
             this.ClientSize = new System.Drawing.Size(678, 470);
             this.Controls.Add(this.siteEval_exit);
             this.Controls.Add(this.siteEval_done);
@@ -518,6 +521,7 @@
             this.Controls.Add(this.siteEval_keyAccess_groupbox);
             this.Name = "SiteEval";
             this.Text = "Site Evaluation";
+            this.Load += new System.EventHandler(this.SiteEval_Load);
             this.siteEval_keyAccess_groupbox.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -530,14 +534,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.siteEval_formaccess_groupbox.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

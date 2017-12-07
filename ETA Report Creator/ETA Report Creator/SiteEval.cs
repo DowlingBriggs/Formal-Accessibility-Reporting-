@@ -223,15 +223,15 @@ namespace ETA_Report_Creator
                 // Add items to the list. If radiobutton is false, add related message
                 if (rb_f1.Checked == true)
                 {
-                    resultsList.Add("Not all functionality is available by using only the keyboard (Tab, Shift +Tab, Enter, etc.)");
+                    resultsList.Add("Page structure: Most, if not all, pages examined lack a link that allows users to “skip navigation” or “skip to main content");
                 }
                 if (rb_f2.Checked == true)
                 {
-                    resultsList.Add("Page structure: Most, if not all, pages examined lack a link that allows users to “skip navigation” or “skip to main content”.");
+                    resultsList.Add("Keyboard Accessibility Issues: Not all functionality is available by using only the keyboard (Tab, Shift +Tab, Enter, etc.).");
                 }
                 if (rb_f3.Checked == true)
                 {
-                    //resultsList.Add("");
+                    resultsList.Add("Color and Contrast Issues: Contrast on text of pages not efficient enough. Some links don't change with hover or focus. Color is sole method of conveying content and distinguishing elements.");
                 }
                 if (rb_f4.Checked == true)
                 {
@@ -266,24 +266,25 @@ namespace ETA_Report_Creator
                 nextsteps1.Range.Font.Name = "Candara";
                 nextsteps1.Range.Borders[WdBorderType.wdBorderBottom].LineStyle = WdLineStyle.wdLineStyleThinThickSmallGap;
                 nextsteps1.Range.InsertParagraphAfter();
-                //nextsteps1.Range.InsertParagraphAfter();
+                nextsteps1.Range.InsertParagraphAfter();
 
                 //Create list
                 var nextStepsList = new List<string>();
 
+
                 // Add items to the list. If radiobutton is false, add related message
                 if (rb_f1.Checked == true)
                 {
-                    resultsList.Add("Not all functionality is available by using only the keyboard (Tab, Shift +Tab, Enter, etc.)");
+                    nextStepsList.Add("Page structure: On each page, make sure all headings have content and that the heading structure s begins with an h1.");
                 }
                 if (rb_f2.Checked == true)
                 {
-                    resultsList.Add("Page structure: Most, if not all, pages examined lack a link that allows users to “skip navigation” or “skip to main content”.");
+                    nextStepsList.Add("Keyboard Accessibility: Make sure that when an element on a webpage receives focus, a visual indicator of the element is present.");
                 }
                 if (rb_f3.Checked == true)
                 {
-                    //resultsList.Add("");
-                }
+                    nextStepsList.Add("Color and Contrast: Make sure that links change visibly when a user hovers over or tabs to them. Links should be underlined and color change shouldn't be only indicator to distinguish elements.")
+;                }
                 if (rb_f4.Checked == true)
                 {
                     //resultsList.Add("");
@@ -331,22 +332,27 @@ namespace ETA_Report_Creator
 
 
                 //Process List
+    
+                
+                                Paragraph p1 = document.Content.Paragraphs.Add();
+                                Range range = document.Range(0, 0);
+                                p1.Range.ListFormat.ApplyBulletDefault();
+                                p1.Range.Text = "Birinci";
+                                p1.Range.ListFormat.ApplyBulletDefault();
+                                p1.Range.InsertParagraphAfter();
+                                ListTemplate listTemplate = p1.Range.ListFormat.ListTemplate;
 
-                Paragraph p1 = document.Content.Paragraphs.Add();
-                //Range range = document.Range(0, 0);
-                //p1.Range.ListFormat.ApplyBulletDefault();
-                p1.Range.Text = "Birinci";
-                p1.Range.ListFormat.ApplyBulletDefault();
-                p1.Range.InsertParagraphAfter();
-                ListTemplate listTemplate = p1.Range.ListFormat.ListTemplate;
+                             //   Paragraph p2 = document.Content.Paragraphs.Add();
+                                Range subRange = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength -1);
+                                subRange.ListFormat.ApplyBulletDefault();
+                                subRange.ListFormat.ListIndent();
+                                subRange.Text = "Alt Birinci";
+                                subRange.InsertParagraphAfter();
+                                ListTemplate sublistTemplate = subRange.ListFormat.ListTemplate;
 
-                Range subRange = document.Range(p1.Range.StoryLength - 1, p1.Range.StoryLength - 1);
-                subRange.ListFormat.ApplyBulletDefault();
-                subRange.ListFormat.ListIndent();
-                subRange.Text = "Alt Birinci";
-                subRange.InsertParagraphAfter();
-                ListTemplate sublistTemplate = subRange.ListFormat.ListTemplate;
 
+            
+                                
                 /*
                 Range subRange2 = document.Range(subRange.StoryLength - 1, p1.Range.StoryLength - 1);
                 subRange2.ListFormat.ApplyListTemplate(sublistTemplate);
@@ -355,12 +361,12 @@ namespace ETA_Report_Creator
                 subRange2.InsertParagraphAfter();
                 */
 
-               /* Range range2 = document.Range(p1.Range.StoryLength - 1);
-                range2.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
-                WdContinue isContinue = range2.ListFormat.CanContinuePreviousList(listTemplate);
-                range2.Text = "İkinci";
-                range2.InsertParagraphAfter();
-                */
+                /* Range range2 = document.Range(p1.Range.StoryLength - 1);
+                 range2.ListFormat.ApplyListTemplateWithLevel(listTemplate, true);
+                 WdContinue isContinue = range2.ListFormat.CanContinuePreviousList(listTemplate);
+                 range2.Text = "İkinci";
+                 range2.InsertParagraphAfter();
+                 */
 
 
 
@@ -383,6 +389,9 @@ namespace ETA_Report_Creator
             {
                 MessageBox.Show(ex.Message);
             }
+
+            //Close program
+            Close();
         }
 
 
@@ -524,6 +533,11 @@ namespace ETA_Report_Creator
             */
 
             return isAnyRadioButtonChecked;
+        }
+
+        private void SiteEval_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -138,6 +138,7 @@
             this.Controls.Add(this.reportCreator_siteNameText);
             this.Name = "ReportCreator";
             this.Text = "Report Creator";
+            this.Load += new System.EventHandler(this.ReportCreator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.reportCreator_pagesTested)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
