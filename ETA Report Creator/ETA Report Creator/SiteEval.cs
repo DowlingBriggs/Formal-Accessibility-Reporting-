@@ -197,26 +197,72 @@ namespace ETA_Report_Creator
 
                 //Results Checklist
 
+                /*
+                 * Code below adds failed items to the Review Results section. Boolean to check if failed is selected,
+                 * if so then the message gets added
+                 */
+
                 //Create list
                 var resultsList = new List<string>();
 
                 // Add items to the list. If radiobutton is false, add related message
+
+                //----------------------
+                //Keyboard Accessiblity
+                //----------------------
+
+                //All func. available
                 if (rb_f1.Checked == true)
                 {
-                    resultsList.Add("Page structure: Most, if not all, pages examined lack a link that allows users to “skip navigation” or “skip to main content");
+                    resultsList.Add("Keyboard Accessibility Issues: Not all functionality is available by using only the keyboard (Tab, Shift +Tab, Enter, etc.).");
+                    
                 }
+                //"Skip nav"
                 if (rb_f2.Checked == true)
                 {
-                    resultsList.Add("Keyboard Accessibility Issues: Not all functionality is available by using only the keyboard (Tab, Shift +Tab, Enter, etc.).");
+                    resultsList.Add("Page structure: Most, if not all, pages examined lack a link that allows users to 'skip navigation' or 'skip to main content'");
                 }
+                //Nav order logical
                 if (rb_f3.Checked == true)
                 {
-                    resultsList.Add("Color and Contrast Issues: Contrast on text of pages not efficient enough. Some links don't change with hover or focus. Color is sole method of conveying content and distinguishing elements.");
+                    resultsList.Add("Page structure: Navigation order is not logical");
                 }
+                //Visible focus indicator
                 if (rb_f4.Checked == true)
+                {
+                    resultsList.Add("A visible keyboard focus indicator or outline is not present");
+                }
+                //Dialog boxes and popups
+                if (rb_f5.Checked == true)
+                {
+                    resultsList.Add("Dialog boxes or popups cannot be navigated or closed using the Esc key");
+                }
+
+                //------------------------
+                //Eval Form Accessibllity and Usability
+                //-----------------------
+
+                //Properly labeled
+                if (rb_f6.Checked == true)
                 {
                     //resultsList.Add("");
                 }
+                //If label not visable...
+                if (rb_f7.Checked == true)
+                {
+                    //resultsList.Add("");
+                }
+                //All forms can be completed via keyboard
+                if (rb_f8.Checked == true)
+                {
+                    //resultsList.Add("");
+                }
+                //Error recovery mechanisms present
+                if (rb_f9.Checked == true)
+                {
+                    //resultsList.Add("");
+                }
+
 
                 //Convert list to array
                 var bulletItems = resultsList.ToArray();
@@ -232,6 +278,10 @@ namespace ETA_Report_Creator
                         bulletItem = bulletItem + "\n";
                     assets.Range.InsertBefore(bulletItem);
                 }
+
+                //----------------------
+                //End of Review Results
+                //----------------------
 
 
 
