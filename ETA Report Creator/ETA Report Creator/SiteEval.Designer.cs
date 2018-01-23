@@ -642,7 +642,7 @@
             this.siteEval_done.Location = new System.Drawing.Point(962, 749);
             this.siteEval_done.Name = "siteEval_done";
             this.siteEval_done.Size = new System.Drawing.Size(75, 23);
-            this.siteEval_done.TabIndex = 18;
+            this.siteEval_done.TabIndex = 73;
             this.siteEval_done.Text = "Done";
             this.siteEval_done.UseVisualStyleBackColor = true;
             this.siteEval_done.Click += new System.EventHandler(this.siteEval_done_Click);
@@ -654,7 +654,7 @@
             this.siteEval_exit.Location = new System.Drawing.Point(1043, 749);
             this.siteEval_exit.Name = "siteEval_exit";
             this.siteEval_exit.Size = new System.Drawing.Size(75, 23);
-            this.siteEval_exit.TabIndex = 19;
+            this.siteEval_exit.TabIndex = 74;
             this.siteEval_exit.Text = "Exit";
             this.siteEval_exit.UseVisualStyleBackColor = true;
             this.siteEval_exit.Click += new System.EventHandler(this.siteEval_exit_Click);
@@ -782,7 +782,7 @@
             this.rb_f15.Location = new System.Drawing.Point(51, 3);
             this.rb_f15.Name = "rb_f15";
             this.rb_f15.Size = new System.Drawing.Size(14, 13);
-            this.rb_f15.TabIndex = 18;
+            this.rb_f15.TabIndex = 30;
             this.rb_f15.TabStop = true;
             this.rb_f15.UseVisualStyleBackColor = true;
             // 
@@ -811,7 +811,7 @@
             this.rb_f14.Location = new System.Drawing.Point(51, 3);
             this.rb_f14.Name = "rb_f14";
             this.rb_f14.Size = new System.Drawing.Size(14, 13);
-            this.rb_f14.TabIndex = 16;
+            this.rb_f14.TabIndex = 28;
             this.rb_f14.TabStop = true;
             this.rb_f14.UseVisualStyleBackColor = true;
             // 
@@ -931,7 +931,7 @@
             this.rb_f16.Location = new System.Drawing.Point(51, 3);
             this.rb_f16.Name = "rb_f16";
             this.rb_f16.Size = new System.Drawing.Size(14, 13);
-            this.rb_f16.TabIndex = 18;
+            this.rb_f16.TabIndex = 32;
             this.rb_f16.TabStop = true;
             this.rb_f16.UseVisualStyleBackColor = true;
             // 
@@ -969,7 +969,7 @@
             this.rb_f17.Location = new System.Drawing.Point(51, 3);
             this.rb_f17.Name = "rb_f17";
             this.rb_f17.Size = new System.Drawing.Size(14, 13);
-            this.rb_f17.TabIndex = 18;
+            this.rb_f17.TabIndex = 34;
             this.rb_f17.TabStop = true;
             this.rb_f17.UseVisualStyleBackColor = true;
             // 
@@ -1019,7 +1019,7 @@
             this.rb_f19.Location = new System.Drawing.Point(51, 3);
             this.rb_f19.Name = "rb_f19";
             this.rb_f19.Size = new System.Drawing.Size(14, 13);
-            this.rb_f19.TabIndex = 10;
+            this.rb_f19.TabIndex = 38;
             this.rb_f19.TabStop = true;
             this.rb_f19.UseVisualStyleBackColor = true;
             // 
@@ -1029,7 +1029,7 @@
             this.rb_p19.Location = new System.Drawing.Point(3, 3);
             this.rb_p19.Name = "rb_p19";
             this.rb_p19.Size = new System.Drawing.Size(14, 13);
-            this.rb_p19.TabIndex = 9;
+            this.rb_p19.TabIndex = 37;
             this.rb_p19.TabStop = true;
             this.rb_p19.UseVisualStyleBackColor = true;
             // 
@@ -1048,7 +1048,7 @@
             this.rb_f18.Location = new System.Drawing.Point(51, 3);
             this.rb_f18.Name = "rb_f18";
             this.rb_f18.Size = new System.Drawing.Size(14, 13);
-            this.rb_f18.TabIndex = 10;
+            this.rb_f18.TabIndex = 36;
             this.rb_f18.TabStop = true;
             this.rb_f18.UseVisualStyleBackColor = true;
             // 
@@ -1058,7 +1058,7 @@
             this.rb_p18.Location = new System.Drawing.Point(3, 3);
             this.rb_p18.Name = "rb_p18";
             this.rb_p18.Size = new System.Drawing.Size(14, 13);
-            this.rb_p18.TabIndex = 9;
+            this.rb_p18.TabIndex = 35;
             this.rb_p18.TabStop = true;
             this.rb_p18.UseVisualStyleBackColor = true;
             // 
@@ -1111,7 +1111,7 @@
             this.rb_f23.Location = new System.Drawing.Point(51, 3);
             this.rb_f23.Name = "rb_f23";
             this.rb_f23.Size = new System.Drawing.Size(14, 13);
-            this.rb_f23.TabIndex = 18;
+            this.rb_f23.TabIndex = 46;
             this.rb_f23.TabStop = true;
             this.rb_f23.UseVisualStyleBackColor = true;
             // 
@@ -1140,7 +1140,7 @@
             this.rb_f22.Location = new System.Drawing.Point(51, 3);
             this.rb_f22.Name = "rb_f22";
             this.rb_f22.Size = new System.Drawing.Size(14, 13);
-            this.rb_f22.TabIndex = 16;
+            this.rb_f22.TabIndex = 44;
             this.rb_f22.TabStop = true;
             this.rb_f22.UseVisualStyleBackColor = true;
             // 
@@ -1169,7 +1169,7 @@
             this.rb_f21.Location = new System.Drawing.Point(51, 3);
             this.rb_f21.Name = "rb_f21";
             this.rb_f21.Size = new System.Drawing.Size(14, 13);
-            this.rb_f21.TabIndex = 14;
+            this.rb_f21.TabIndex = 42;
             this.rb_f21.TabStop = true;
             this.rb_f21.UseVisualStyleBackColor = true;
             // 
@@ -1179,7 +1179,7 @@
             this.rb_p21.Location = new System.Drawing.Point(3, 3);
             this.rb_p21.Name = "rb_p21";
             this.rb_p21.Size = new System.Drawing.Size(14, 13);
-            this.rb_p21.TabIndex = 13;
+            this.rb_p21.TabIndex = 41;
             this.rb_p21.TabStop = true;
             this.rb_p21.UseVisualStyleBackColor = true;
             // 
@@ -1198,7 +1198,7 @@
             this.rb_f20.Location = new System.Drawing.Point(51, 3);
             this.rb_f20.Name = "rb_f20";
             this.rb_f20.Size = new System.Drawing.Size(14, 13);
-            this.rb_f20.TabIndex = 12;
+            this.rb_f20.TabIndex = 40;
             this.rb_f20.TabStop = true;
             this.rb_f20.UseVisualStyleBackColor = true;
             // 
@@ -1208,7 +1208,7 @@
             this.rb_p20.Location = new System.Drawing.Point(3, 3);
             this.rb_p20.Name = "rb_p20";
             this.rb_p20.Size = new System.Drawing.Size(14, 13);
-            this.rb_p20.TabIndex = 11;
+            this.rb_p20.TabIndex = 39;
             this.rb_p20.TabStop = true;
             this.rb_p20.UseVisualStyleBackColor = true;
             // 
@@ -1291,7 +1291,7 @@
             this.rb_f24.Location = new System.Drawing.Point(51, 3);
             this.rb_f24.Name = "rb_f24";
             this.rb_f24.Size = new System.Drawing.Size(14, 13);
-            this.rb_f24.TabIndex = 10;
+            this.rb_f24.TabIndex = 48;
             this.rb_f24.TabStop = true;
             this.rb_f24.UseVisualStyleBackColor = true;
             // 
@@ -1320,7 +1320,7 @@
             this.rb_f25.Location = new System.Drawing.Point(51, 3);
             this.rb_f25.Name = "rb_f25";
             this.rb_f25.Size = new System.Drawing.Size(14, 13);
-            this.rb_f25.TabIndex = 10;
+            this.rb_f25.TabIndex = 50;
             this.rb_f25.TabStop = true;
             this.rb_f25.UseVisualStyleBackColor = true;
             // 
@@ -1382,7 +1382,7 @@
             this.rb_f29.Location = new System.Drawing.Point(51, 3);
             this.rb_f29.Name = "rb_f29";
             this.rb_f29.Size = new System.Drawing.Size(14, 13);
-            this.rb_f29.TabIndex = 18;
+            this.rb_f29.TabIndex = 58;
             this.rb_f29.TabStop = true;
             this.rb_f29.UseVisualStyleBackColor = true;
             // 
@@ -1411,7 +1411,7 @@
             this.rb_f28.Location = new System.Drawing.Point(51, 3);
             this.rb_f28.Name = "rb_f28";
             this.rb_f28.Size = new System.Drawing.Size(14, 13);
-            this.rb_f28.TabIndex = 16;
+            this.rb_f28.TabIndex = 56;
             this.rb_f28.TabStop = true;
             this.rb_f28.UseVisualStyleBackColor = true;
             // 
@@ -1440,7 +1440,7 @@
             this.rb_f27.Location = new System.Drawing.Point(51, 3);
             this.rb_f27.Name = "rb_f27";
             this.rb_f27.Size = new System.Drawing.Size(14, 13);
-            this.rb_f27.TabIndex = 14;
+            this.rb_f27.TabIndex = 54;
             this.rb_f27.TabStop = true;
             this.rb_f27.UseVisualStyleBackColor = true;
             // 
@@ -1469,7 +1469,7 @@
             this.rb_f26.Location = new System.Drawing.Point(51, 3);
             this.rb_f26.Name = "rb_f26";
             this.rb_f26.Size = new System.Drawing.Size(14, 13);
-            this.rb_f26.TabIndex = 12;
+            this.rb_f26.TabIndex = 52;
             this.rb_f26.TabStop = true;
             this.rb_f26.UseVisualStyleBackColor = true;
             // 
@@ -1715,7 +1715,7 @@
             this.rb_f30.Location = new System.Drawing.Point(51, 3);
             this.rb_f30.Name = "rb_f30";
             this.rb_f30.Size = new System.Drawing.Size(14, 13);
-            this.rb_f30.TabIndex = 12;
+            this.rb_f30.TabIndex = 60;
             this.rb_f30.TabStop = true;
             this.rb_f30.UseVisualStyleBackColor = true;
             // 
