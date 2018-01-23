@@ -687,7 +687,7 @@
             this.rb_f11.Location = new System.Drawing.Point(51, 3);
             this.rb_f11.Name = "rb_f11";
             this.rb_f11.Size = new System.Drawing.Size(14, 13);
-            this.rb_f11.TabIndex = 10;
+            this.rb_f11.TabIndex = 22;
             this.rb_f11.TabStop = true;
             this.rb_f11.UseVisualStyleBackColor = true;
             // 
@@ -697,7 +697,7 @@
             this.rb_p11.Location = new System.Drawing.Point(3, 3);
             this.rb_p11.Name = "rb_p11";
             this.rb_p11.Size = new System.Drawing.Size(14, 13);
-            this.rb_p11.TabIndex = 9;
+            this.rb_p11.TabIndex = 21;
             this.rb_p11.TabStop = true;
             this.rb_p11.UseVisualStyleBackColor = true;
             // 
@@ -716,7 +716,7 @@
             this.rb_f10.Location = new System.Drawing.Point(51, 3);
             this.rb_f10.Name = "rb_f10";
             this.rb_f10.Size = new System.Drawing.Size(14, 13);
-            this.rb_f10.TabIndex = 10;
+            this.rb_f10.TabIndex = 20;
             this.rb_f10.TabStop = true;
             this.rb_f10.UseVisualStyleBackColor = true;
             // 
@@ -726,7 +726,7 @@
             this.rb_p10.Location = new System.Drawing.Point(3, 3);
             this.rb_p10.Name = "rb_p10";
             this.rb_p10.Size = new System.Drawing.Size(14, 13);
-            this.rb_p10.TabIndex = 9;
+            this.rb_p10.TabIndex = 19;
             this.rb_p10.TabStop = true;
             this.rb_p10.UseVisualStyleBackColor = true;
             // 
@@ -792,7 +792,7 @@
             this.rb_p15.Location = new System.Drawing.Point(3, 3);
             this.rb_p15.Name = "rb_p15";
             this.rb_p15.Size = new System.Drawing.Size(14, 13);
-            this.rb_p15.TabIndex = 17;
+            this.rb_p15.TabIndex = 29;
             this.rb_p15.TabStop = true;
             this.rb_p15.UseVisualStyleBackColor = true;
             // 
@@ -821,7 +821,7 @@
             this.rb_p14.Location = new System.Drawing.Point(3, 3);
             this.rb_p14.Name = "rb_p14";
             this.rb_p14.Size = new System.Drawing.Size(14, 13);
-            this.rb_p14.TabIndex = 15;
+            this.rb_p14.TabIndex = 27;
             this.rb_p14.TabStop = true;
             this.rb_p14.UseVisualStyleBackColor = true;
             // 
@@ -840,7 +840,7 @@
             this.rb_f13.Location = new System.Drawing.Point(51, 3);
             this.rb_f13.Name = "rb_f13";
             this.rb_f13.Size = new System.Drawing.Size(14, 13);
-            this.rb_f13.TabIndex = 14;
+            this.rb_f13.TabIndex = 26;
             this.rb_f13.TabStop = true;
             this.rb_f13.UseVisualStyleBackColor = true;
             // 
@@ -850,7 +850,7 @@
             this.rb_p13.Location = new System.Drawing.Point(3, 3);
             this.rb_p13.Name = "rb_p13";
             this.rb_p13.Size = new System.Drawing.Size(14, 13);
-            this.rb_p13.TabIndex = 13;
+            this.rb_p13.TabIndex = 25;
             this.rb_p13.TabStop = true;
             this.rb_p13.UseVisualStyleBackColor = true;
             // 
@@ -869,7 +869,7 @@
             this.rb_f12.Location = new System.Drawing.Point(51, 3);
             this.rb_f12.Name = "rb_f12";
             this.rb_f12.Size = new System.Drawing.Size(14, 13);
-            this.rb_f12.TabIndex = 12;
+            this.rb_f12.TabIndex = 24;
             this.rb_f12.TabStop = true;
             this.rb_f12.UseVisualStyleBackColor = true;
             // 
@@ -879,7 +879,7 @@
             this.rb_p12.Location = new System.Drawing.Point(3, 3);
             this.rb_p12.Name = "rb_p12";
             this.rb_p12.Size = new System.Drawing.Size(14, 13);
-            this.rb_p12.TabIndex = 11;
+            this.rb_p12.TabIndex = 23;
             this.rb_p12.TabStop = true;
             this.rb_p12.UseVisualStyleBackColor = true;
             // 
@@ -941,7 +941,7 @@
             this.rb_p16.Location = new System.Drawing.Point(3, 3);
             this.rb_p16.Name = "rb_p16";
             this.rb_p16.Size = new System.Drawing.Size(14, 13);
-            this.rb_p16.TabIndex = 17;
+            this.rb_p16.TabIndex = 31;
             this.rb_p16.TabStop = true;
             this.rb_p16.UseVisualStyleBackColor = true;
             // 
@@ -979,7 +979,7 @@
             this.rb_p17.Location = new System.Drawing.Point(3, 3);
             this.rb_p17.Name = "rb_p17";
             this.rb_p17.Size = new System.Drawing.Size(14, 13);
-            this.rb_p17.TabIndex = 17;
+            this.rb_p17.TabIndex = 33;
             this.rb_p17.TabStop = true;
             this.rb_p17.UseVisualStyleBackColor = true;
             // 
