@@ -723,5 +723,25 @@ namespace ETA_Report_Creator
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
